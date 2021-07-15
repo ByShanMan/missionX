@@ -1,0 +1,82 @@
+.footer {
+    color: slategrey;
+ 
+}
+
+.title {
+    text-align: center;
+   
+}
+
+.col1 {
+    text-align: left;
+    line-height: 2em;
+    position: relative;
+    left: 6.5em;
+}
+
+.col2 {
+    position: relative;
+    text-align: left;
+    left: 3.5em;
+    line-height: 2em;
+}
+
+.col3 {
+    text-align: left;
+    line-height: 2em;
+    position:relative;
+    left: 1em;
+}
+
+.col4 {
+    text-align: left;
+    position: relative;
+    right: 1.5em;
+    line-height: 2em;
+    
+}
+
+.lastTitle {
+    text-align: left;
+    font-size:medium;
+}
+
+.col5 {
+    position: relative;
+    right: 6em;
+    text-align: left;
+    line-height: 23px;
+    padding: 3px;
+     
+}
+
+h3 {
+   
+    position: relative; 
+}
+
+.first {
+    position: relative;
+    left: 5em;
+}
+
+.second {
+    position: relative;
+    left: 2.5em;
+}
+
+.third {
+    position: relative;
+    left: .3em;
+}
+
+.fourth {
+    position: relative;
+    right: 6em;
+}
+
+.fifth {
+    position: relative;
+    right: 5em;
+}
