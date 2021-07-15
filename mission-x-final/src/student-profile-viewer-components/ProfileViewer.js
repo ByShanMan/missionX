@@ -3,7 +3,7 @@ import React from 'react';
 import Header from './header';
 import AvatarCard from './avatarCard';
 import InfoCard from './infoCard';
-import Footer from './footer';
+import Footer from '../shared-components/footer';
 
 import '../componentsCSS/projectViewer.css';
 
