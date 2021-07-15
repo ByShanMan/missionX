@@ -1,11 +1,30 @@
-import './App.css';
+import React, {useState} from "react";
 
-function App() {
+import ProfileViewer from "./components/ProfileViewer";
+import StudentProfiles from './PV-students/StudentProfiles';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
+export default function App() {
+
+  const [selectedUser, setSelectedUser] = useState({})
+
   return (
-    <div className="App">
-
-    </div>
-  );
+          <>
+            <Router>
+                <Switch>
+                    <Route path="/profile-view">
+                        <ProfileViewer selectedUser={selectedUser} />
+                    </Route>
+                    <Route path="/student-profile">
+                        <StudentProfiles setSelectedUser={setSelectedUser} />
+                    </Route>
+                </Switch>
+            </Router>
+          </>
+        );
 }
-
-export default App;
