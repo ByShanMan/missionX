@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import InfoBoxArray from './infoBoxArr'
 import InfoBoxText from './infoBox';
 
-import "../componentsCSS/infoBlock.css"
+import "./homepage-componentsCSS/infoBlock.css"
 
 export default function InfoBlock() {
 

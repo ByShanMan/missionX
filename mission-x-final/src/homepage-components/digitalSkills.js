@@ -9,7 +9,7 @@ import communicationOverlay from "../homepageIMG/digitalSkillsIMGs/communication
 import futureFocusCard from "../homepageIMG/digitalSkillsIMGs/futureFocusCard.png";
 import futureFocusOverlay from "../homepageIMG/digitalSkillsIMGs/futureFocusOverlay.png";
 
-import "../componentsCSS/digitalSkills.css"
+import "./homepage-componentsCSS/digitalSkills.css"
 
 
 export default function DigitalSkills() {

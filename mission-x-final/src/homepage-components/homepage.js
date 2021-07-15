@@ -7,13 +7,13 @@ import InfoBlock from "./infoBlock";
 import BottomBanner from "./bottomPromo"
 import Footer from './footer';
 
-import "../componentsCSS/homepage.css"
+import "./homepage-componentsCSS/homepage.css"
 
 export default function Homepage() {
     return (
 
         <div className="homeMainpage">
-            <Header />
+            {/* <Header /> */}
             <PromoBanner />
             <WeOffer />
             {/*<DigitalSkills />
@@ -23,4 +23,3 @@ export default function Homepage() {
         </div>
     )
 }
-

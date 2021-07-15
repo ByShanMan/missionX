@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/styles"
 
 import babyBanner from '../homepageIMG/promoBannerIMGs/babyBanner.png';
 
-import "../componentsCSS/promoBanner.css";
+import "./homepage-componentsCSS/promoBanner.css";
 
 
 const styles = makeStyles({

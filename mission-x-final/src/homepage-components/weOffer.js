@@ -5,7 +5,7 @@ import Container from '@material-ui/core/Container';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import Radio from '@material-ui/core/Radio';
 
-import "../componentsCSS/weOffer.css";
+import "./homepage-componentsCSS/weOffer.css";
 import weOfferArray from './weOfferArr.js'
 
 import animationScreen from "../homepageIMG/weOfferIMGs/animationScreen.png";
