@@ -4,10 +4,8 @@ import PromoBanner from "./PromoBanner";
 import WeOffer from "./WeOffer";
 import DigitalSkills from "./DigitalSkills";
 import InfoBlock from "./InfoBlock";
-import BottomBanner from "./BottomPromo";
-import Footer from "./footer";
-
-import "../homepage-componentsCSS/homepage.css";
+import BottomPromo from "./BottomPromo";
+import Footer from "./Footer";
 
 export default function Homepage() {
   return (

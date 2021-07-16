@@ -5,13 +5,8 @@ import Container from "@material-ui/core/Container";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import Radio from "@material-ui/core/Radio";
 
-<<<<<<< HEAD
 import "../homepage-componentsCSS/weOffer.css";
 import WeOfferCard from "./WeOfferCard.js";
-=======
-import "./homepage-componentsCSS/weOffer.css";
-import weOfferArray from './weOfferArr.js'
->>>>>>> a751d051cfb0fc2c597128777bffcbc672ffd9f3
 
 import animationScreen from "../homepageIMG/weOfferIMGs/animationScreen.png";
 import gamesScreen from "../homepageIMG/weOfferIMGs/gamesScreen.png";
@@ -77,7 +72,7 @@ export default function WeOffer() {
         ))}
       </Grid>
 
-{/*------This needs to have conditional rendering to show different laptop pics-----*/}
+      {/*------This needs to have conditional rendering to show different laptop pics-----*/}
 
       <div className="weOfferPic">
         <img className="laptopScreen" src={animationScreen} alt="" />

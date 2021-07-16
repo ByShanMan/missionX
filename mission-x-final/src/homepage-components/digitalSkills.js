@@ -1,7 +1,9 @@
 import React from "react";
 
-import "../componentsCSS/digitalSkills.css";
 import DigitalSkillsCard from "./DigitalSkillsCard";
+
+import "../homepage-componentsCSS/digitalSkills.css";
+
 
 const digitalSkillsArray = [
   {

@@ -1,14 +1,6 @@
-<<<<<<< HEAD
 import React from "react";
-import "../componentsCSS/infoBox.css";
+import "../homepage-componentsCSS/infoBox.css";
 import { Container } from "@material-ui/core";
-=======
-import React from 'react';
-
-import './homepage-componentsCSS/infoBox.css';
-
-import { Container }from '@material-ui/core'
->>>>>>> a751d051cfb0fc2c597128777bffcbc672ffd9f3
 
 export default function InfoBoxText({ props }) {
   console.log(props);
