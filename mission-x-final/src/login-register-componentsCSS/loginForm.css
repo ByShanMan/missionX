@@ -1,0 +1,84 @@
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    transition: visibility 0s, opacity 0.5s;
+    
+}
+
+.formActive {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.modalContentL {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 100px;
+    margin-left: auto;
+    border-right: solid 2px slategray;
+    width: 22%;
+    background-color: white;
+   
+}
+.modalContentR {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 100px;
+    margin-right: auto;
+    width: 22%;
+    background-color: white;
+}
+
+.gridContainer {
+    margin: 20px;
+    width: 250px;
+    
+}
+
+.signUp {
+    height: 10%;
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+
+.email {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    border-color: lightgrey;
+    border-radius: 7px;
+    border-block-width: 1px;
+    padding: 5px;
+}
+
+.password {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    border-color: lightgrey;
+    border-radius: 7px;
+    border-block-width: 1px;
+    padding: 5px;
+}
+

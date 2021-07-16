@@ -1,0 +1,13 @@
+.close {
+    position:absolute;
+    top: 16%;
+    left: 68%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom:auto;
+    font-size: 65px;
+    /* font-weight: 900; */
+    color: slategray;
+    cursor: pointer;
+
+}
