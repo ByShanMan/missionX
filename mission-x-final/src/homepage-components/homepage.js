@@ -7,8 +7,7 @@ import InfoBlock from "./InfoBlock";
 import BottomBanner from "./BottomPromo";
 import Footer from "./footer";
 
-<<<<<<< HEAD
-import "../componentsCSS/homepage.css";
+import "../homepage-componentsCSS/homepage.css";
 
 export default function Homepage() {
   return (
@@ -17,18 +16,6 @@ export default function Homepage() {
       <PromoBanner />
       <WeOffer />
       {/*<DigitalSkills />
-=======
-import "./homepage-componentsCSS/homepage.css"
-
-export default function Homepage() {
-    return (
-
-        <div className="homeMainpage">
-            {/* <Header /> */}
-            <PromoBanner />
-            <WeOffer />
-            {/*<DigitalSkills />
->>>>>>> a751d051cfb0fc2c597128777bffcbc672ffd9f3
             <InfoBlock />
             <BottomBanner />
             <Footer /> */}
