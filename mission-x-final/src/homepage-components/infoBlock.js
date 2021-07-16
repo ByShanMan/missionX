@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import InfoBoxText from "./InfoBox";
 
+<<<<<<< HEAD
 import "../componentsCSS/infoBlock.css";
 
 const InfoBoxArray = [
@@ -121,6 +122,9 @@ const InfoBoxArray = [
       "The programme leads students to explore future themes such as artifical intelligence and augmented reality.",
   },
 ];
+=======
+import "./homepage-componentsCSS/infoBlock.css"
+>>>>>>> a751d051cfb0fc2c597128777bffcbc672ffd9f3
 
 export default function InfoBlock() {
   const [activeButton, setActiveButton] = useState("b1");
