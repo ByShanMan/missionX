@@ -27,8 +27,6 @@ const useStyles = makeStyles (theme => ({
     }
 }));
 
-
-
 export default function LoginForm() {
 
 const classes = useStyles()
@@ -50,7 +48,6 @@ const handleLogin = () => {
         console.log(err)
     })
 }
-  
 
     return (
         <div className="formContainer">
@@ -84,7 +81,6 @@ const handleLogin = () => {
                             <input className="password" type="password" placeholder="Password"></input>
                         </div>
                         <Button onClick={handleLogin} className={classes.root} variant="contained">Log In</Button> 
-                        {/* <BottomLoginSignUp /> */}
                     </div>
                 
             </div>
