@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import Radio from "@material-ui/core/Radio";
 
-import WeOfferCard from "./WeOfferCard.js";
+import WeOfferCard from "./weOfferCard.js";
 
 import "../homepage-componentsCSS/weOffer.css";
 

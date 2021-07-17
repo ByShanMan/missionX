@@ -3,7 +3,7 @@ import Button from "@material-ui/core/Button";
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/styles";
 
-import "./homepage-componentsCSS/promoBanner.css";
+import "../homepage-componentsCSS/promoBanner.css";
 
 const useStyles = makeStyles({
   signupButton: {

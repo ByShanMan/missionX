@@ -1,7 +1,8 @@
 import React from "react";
 
-import DigitalSkillsCard from "./DigitalSkillsCard";
+import { Grid } from "@material-ui/core";
 
+import DigitalSkillsCard from "./DigitalSkillsCard";
 import "../homepage-componentsCSS/digitalSkills.css";
 
 

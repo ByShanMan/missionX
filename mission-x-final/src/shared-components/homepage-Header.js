@@ -3,7 +3,7 @@ import React from "react";
 import Avatar from "@material-ui/core/Avatar";
 import Container from "@material-ui/core/Container";
 
-import "../shared-componentsCSS/homepage-Header.css";
+import "../shared-componentsCSS/homepage-header.css";
 
 export default function Header() {
   return (
