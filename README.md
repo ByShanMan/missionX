@@ -8,4 +8,4 @@ Teachers can help students via the platform.
 
 It is designed so that the classes can be conducted either in-person or online although there is no video component to it.
 
-## Creators:    Nathan ,  Gorett ,  Lusia , Shanan
+## Creators:    Nathan ,  Goretti ,  Lusia , Shanan
