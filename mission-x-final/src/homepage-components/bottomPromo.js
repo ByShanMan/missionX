@@ -1,5 +1,6 @@
 import React from "react";
-import './homepage-componentsCSS/bottomPromo.css'
+
+import '../homepage-componentsCSS/bottomPromo.css'
 
 export default function BottomPromo() {
   return (

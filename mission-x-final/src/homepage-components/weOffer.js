@@ -5,35 +5,31 @@ import Container from "@material-ui/core/Container";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import Radio from "@material-ui/core/Radio";
 
-import "../homepage-componentsCSS/weOffer.css";
 import WeOfferCard from "./WeOfferCard.js";
 
-import animationScreen from "../homepageIMG/weOfferIMGs/animationScreen.png";
-import gamesScreen from "../homepageIMG/weOfferIMGs/gamesScreen.png";
-import chatbotScreen from "../homepageIMG/weOfferIMGs/chatbotScreen.png";
-import augmentedScreen from "../homepageIMG/weOfferIMGs/augmentedScreen.png";
+import "../homepage-componentsCSS/weOffer.css";
 
 const weOfferArray = [
   {
-    id: 1,
+    buttonValue: "b1",
     backgroundImage: "Mission-X-Images/homepageImages/backgroundCard.png",
     overlayImage: "Mission-X-Images/homepageImages/animationOverlay.png",
     title: "ANIMATION",
   },
   {
-    id: 2,
+    buttonValue: "b2",
     backgroundImage: "Mission-X-Images/homepageImages/backgroundCard.png",
     overlayImage: "Mission-X-Images/homepageImages/gamesOverlay.png",
     title: "GAMES",
   },
   {
-    id: 3,
+    buttonValue: "b3",
     backgroundImage: "Mission-X-Images/homepageImages/backgroundCard.png",
     overlayImage: "Mission-X-Images/homepageImages/chatbotOverlay.png",
     title: "CHATBOT",
   },
   {
-    id: 4,
+    buttonValue: "b4",
     backgroundImage: "Mission-X-Images/homepageImages/backgroundCard.png",
     overlayImage: "Mission-X-Images/homepageImages/augmentedReality.png",
     title: "AUGMENTED REALITY",
@@ -42,6 +38,7 @@ const weOfferArray = [
 
 function createOfferCard(offerCard) {
   <WeOfferCard
+    buttonValue={offerCard.buttonValue}
     backgroundImage={offerCard.backgroundImg}
     overlayImage={offerCard.offerImage}
     title={offerCard.title}
@@ -49,6 +46,32 @@ function createOfferCard(offerCard) {
 }
 
 export default function WeOffer() {
+  const [activeButton, setActiveButton] = useState("b1");
+  var laptopScreen = "";
+
+  const handleClick = (e) => {
+    console.log(e);
+    setActiveButton(e.target.value);
+  };
+
+  if (activeButton === "b1") {
+    laptopScreen = (
+      <img src="Mission-X-Images/homepageImages/animationScreen.png" />
+    );
+  } else if (activeButton === "b2") {
+    laptopScreen = (
+      <img src="Mission-X-Images/homepageImages/gamesScreen.png" />
+    );
+  } else if (activeButton === "b3") {
+    laptopScreen = (
+      <img src="Mission-X-Images/homepageImages/chatbotScreen.png" />
+    );
+  } else if (activeButton === "b4") {
+    laptopScreen = (
+      <img src="Mission-X-Images/homepageImages/augmentedScreen.png" />
+    );
+  }
+
   return (
     <div className="weOffer">
       {/* <Container className="weOfferContainer" maxWidth="xl"> */}
@@ -72,15 +95,37 @@ export default function WeOffer() {
         ))}
       </Grid>
 
-      {/*------This needs to have conditional rendering to show different laptop pics-----*/}
-
       <div className="weOfferPic">
-        <img className="laptopScreen" src={animationScreen} alt="" />
+        <img className="laptopScreen" src={laptopScreen} alt="" />
         <RadioGroup className="radioButtons">
-          <Radio />
-          <Radio />
-          <Radio />
-          <Radio />
+          <Radio
+            value="b1"
+            className={
+              activeButton === "b1" ? "buttonStyle active" : "buttonStyle"
+            }
+            onClick={handleClick}
+          />
+          <Radio
+            value="b1"
+            className={
+              activeButton === "b2" ? "buttonStyle active" : "buttonStyle"
+            }
+            onClick={handleClick}
+          />
+          <Radio
+            value="b1"
+            className={
+              activeButton === "b3" ? "buttonStyle active" : "buttonStyle"
+            }
+            onClick={handleClick}
+          />
+          <Radio
+            value="b1"
+            className={
+              activeButton === "b4" ? "buttonStyle active" : "buttonStyle"
+            }
+            onClick={handleClick}
+          />
         </RadioGroup>
       </div>
       {/* </Container> */}

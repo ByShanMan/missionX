@@ -3,11 +3,9 @@ import Button from "@material-ui/core/Button";
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/styles";
 
-import babyBanner from "../homepageIMG/promoBannerIMGs/babyBanner.png";
-
 import "./homepage-componentsCSS/promoBanner.css";
 
-const styles = makeStyles({
+const useStyles = makeStyles({
   signupButton: {
     background: "#F91C85",
     padding: "0.2em 3em",
@@ -34,12 +32,16 @@ const styles = makeStyles({
 });
 
 export default function PromoBanner() {
-  const muiStyles = styles();
+  const styles = useStyles();
 
   return (
     <div className="promoBanner">
       <div className="promoPic">
-        <img className="babyImage" src={babyBanner} alt="this is baby" />
+        <img
+          className="babyImage"
+          src="Mission-X-Images/homepageImages/babyBanner.png"
+          alt="baby image"
+        />
 
         <div className="promoText">
           <Container maxWidth="xl">
@@ -56,7 +58,7 @@ export default function PromoBanner() {
                 <Button
                   variant="outlined"
                   color="primary"
-                  className={muiStyles.learnMoreButton}
+                  className={styles.learnMoreButton}
                 >
                   LEARN MORE
                 </Button>
@@ -66,7 +68,7 @@ export default function PromoBanner() {
                 <Button
                   variant="contained"
                   color="secondary"
-                  className={muiStyles.signupButton}
+                  className={styles.signupButton}
                 >
                   SIGN UP
                 </Button>

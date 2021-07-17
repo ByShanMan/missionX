@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import InfoBoxText from "./InfoBox";
+import InfoBoxText from "./infoBox";
 
-import "../homepage-componentsCSS/InfoBlock.css"
+import "../homepage-componentsCSS/infoBlock.css"
 
 const InfoBoxArray = [
   {

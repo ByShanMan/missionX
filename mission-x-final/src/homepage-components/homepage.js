@@ -1,11 +1,12 @@
 import React from "react";
-import Header from "./Header.js";
-import PromoBanner from "./PromoBanner";
-import WeOffer from "./WeOffer";
-import DigitalSkills from "./DigitalSkills";
-import InfoBlock from "./InfoBlock";
-import BottomPromo from "./BottomPromo";
-import Footer from "./Footer";
+import Header from "../shared-components/homepage-Header.js";
+import PromoBanner from "./promoBanner";
+import WeOffer from "./weOffer";
+import DigitalSkills from "./digitalSkills";
+import InfoBlock from "./infoBlock";
+import BottomPromo from "./bottomPromo";
+import Footer from "../shared-components/Footer.js"
+
 
 export default function Homepage() {
   return (
@@ -15,8 +16,8 @@ export default function Homepage() {
       <WeOffer />
       {/*<DigitalSkills />
             <InfoBlock />
-            <BottomBanner />
-            <Footer /> */}
+      <BottomBanner />*/}
+      <Footer /> 
     </div>
   );
 }
