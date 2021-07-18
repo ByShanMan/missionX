@@ -1,10 +1,10 @@
 import React from 'react'
-import StudentProfiles from './studentProfiles';
+import StudentProfiles from './student-profiles-components';
 import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
 
-import '../componentsCSS/studentCards.css';
+import './student-profiles-componentsCSS/studentCards.css';
 
 import studentInfo from './studentInfoArr';
 

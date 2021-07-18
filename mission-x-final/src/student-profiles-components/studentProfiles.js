@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import { createStyles, Grid } from '@material-ui/core';
 
 
-import '../componentsCSS/studentProfiles.css';
+import '../student-profiles-componentsCSS/studentProfiles.css';
 
 
 const useStyles = makeStyles({
