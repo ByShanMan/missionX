@@ -10,7 +10,7 @@ import Container from '@material-ui/core/Container'
 
 import "../componentsCSS/header.css"
 
-export default function Header({selectedUser}) {
+export default function Header({selectedTeacher}) {
     return (
 
         <div className="header">
@@ -33,11 +33,11 @@ export default function Header({selectedUser}) {
                         <div className="loginContainer">
                             <div className="avatar">
                                 <Avatar>
-                                <img src={selectedUser.imgURL} alt="lilAvatar"/>
+                                <img src={selectedTeacher.imgURL} alt="lilAvatar"/>
                                 </Avatar>
                             </div>
                             <div className="loginButtons">
-                                <p>{selectedUser.first_name} {selectedUser.last_name}</p>
+                                <p>{selectedTeacher.first_name} {selectedTeacher.last_name}</p>
                             </div>
                         </div>
                     </div>

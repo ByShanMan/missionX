@@ -40,7 +40,7 @@ const useStyles= makeStyles({
     }
 });
 
-export default function AvatarCard({selectedUser}) {
+export default function AvatarCard({selectedTeacher}) {
     const styles = useStyles();
 
     return (
@@ -50,7 +50,7 @@ export default function AvatarCard({selectedUser}) {
             >
                 <Avatar 
                 className={styles.avPic}>
-                    <img src={selectedUser.imgURL} alt="mainAvatar"/>
+                    <img src={selectedTeacher.imgURL} alt="mainAvatar"/>
                 </Avatar>
                 <div 
                 className="avCardButtons">
