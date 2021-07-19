@@ -4,39 +4,48 @@
 
 .loginLinks {
     display: flex;
-    justify-content: center;
-   
+    justify-content: center;  
    
 }
 
-.loginLink1 {
+.loginLinks {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.loginLink3 {
     font-weight:800;
     font-size: x-large;
     color:slategray;
     text-decoration: none;
     padding-right: 20px;
-   
 }
 
-a.loginLink1:hover, a.loginLinks:active{
-    text-decoration: underline #00c3ff;
-    text-decoration-thickness: 5px;
-}
-
-
-.signUpLink2 {
+.signupLink3 {
     font-weight:800;
     font-size: x-large;
     color:slategray;
     text-decoration: none;
-    padding-left: 20px;
-   
+    padding-right: 20px;
 }
 
-a.signUpLink2:hover, a.loginLinks:active{
+.loginLink3:hover {
+    text-decoration: underline #00c3ff;
+    text-decoration-thickness: 5px;
+}
+
+.signupLink3:hover {
     text-decoration: underline #F4499B;
     text-decoration-thickness: 5px;
-
 }
 
-    
+.loginActive {
+    text-decoration: underline #00c3ff;
+    text-decoration-thickness: 5px;
+}
+
+.signupActive {
+    text-decoration: underline #F4499B;
+    text-decoration-thickness: 5px;
+}

@@ -44,6 +44,7 @@
 .gridContainer {
     margin: 20px;
     width: 250px;
+    padding-block: 20px;
     
 }
 
@@ -54,14 +55,14 @@
     flex-direction: column;
     justify-content: center;
 
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 15px;
     padding-bottom: 20px;
     padding-top: 50px;
 
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 
 .email {
@@ -71,6 +72,7 @@
     border-radius: 7px;
     border-block-width: 1px;
     padding: 5px;
+    width: 200px;
 }
 
 .password {
@@ -80,5 +82,6 @@
     border-radius: 7px;
     border-block-width: 1px;
     padding: 5px;
+    width: 200px;
 }
 

@@ -47,12 +47,12 @@ export default function LoginForm() {
     //         console.log("Login Successful")
     //     })
     //     .catch(err => {
-    //         console.log("Login Unsuccessful")
+    //         console.log("Login Unsuccessful")`
     //         console.log(err)
     //     })
     //     }
 
-        if(activeButton === "b1") {
+        if(activeButton === "form1") {
             changeForm = <LoginForm1 />
         } else {
             changeForm = <SignUpForm />

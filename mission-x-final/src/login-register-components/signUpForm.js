@@ -46,17 +46,25 @@ export default function SignUpForm() {
 
     return (
 
-        <div>
+        <div className="signUpInput">
             <input className="fullName" onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Full Name"></input>
+            <br>
+            </br>
             <br>
             </br>
             <input className="emailAddress" value={email} onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Email Address"></input>
             <br>
             </br>
-            <input className="newPassword" value={password} onChange={(e) => setPassword(e.target.value)} type="text" placeholder="Password"></input>
             <br>
             </br>
-            <input className="confirmPassword" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} type="text" placeholder="Confirm Password"></input>
+            <input className="newPassword" value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password"></input>
+            <br>
+            </br>
+            <br>
+            </br>
+            <input className="confirmPassword" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} type="password" placeholder="Confirm Password"></input>
+            <br>
+            </br>
             <br>
             </br>
             <Button onClick={handleSignUp} className={classes.root} variant="contained">Sign Up</Button>             
