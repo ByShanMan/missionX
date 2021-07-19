@@ -1,5 +1,5 @@
 import React from 'react'
-import '../componentsCSS/avatar.css'
+import '../login-register-componentsCSS/avatar.css'
 
 
 export default function Avatar() {

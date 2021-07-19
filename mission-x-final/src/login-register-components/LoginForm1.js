@@ -3,7 +3,6 @@ import axios from "axios";
 import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
-import "../login-register-componentsCSS/signUpForm.css";
 
 const useStyles = makeStyles (theme => ({
     root: { 
@@ -21,15 +20,14 @@ const useStyles = makeStyles (theme => ({
     }
 }));
 
-export default function SignUpForm() {
+function LoginForm1() {
 
     const classes = useStyles()
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const [confirmPassword, setConfirmPassword] = useState('')
 
-    const handleSignUp = () => {
+    const handleLogin = () => {
         axios.post('http://localhost:4000/login', {
             email: email,
             password: password,
@@ -44,23 +42,20 @@ export default function SignUpForm() {
         })
     }
 
+
     return (
-
+        <>
+        <div>        
+        <input className="email" value={email} onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Email Address"></input>
+        <br />
+        <input className="password" value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password"></input>            
+        </div> 
         <div>
-            <input className="fullName" onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Full Name"></input>
-            <br>
-            </br>
-            <input className="emailAddress" value={email} onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Email Address"></input>
-            <br>
-            </br>
-            <input className="newPassword" value={password} onChange={(e) => setPassword(e.target.value)} type="text" placeholder="Password"></input>
-            <br>
-            </br>
-            <input className="confirmPassword" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} type="text" placeholder="Confirm Password"></input>
-            <br>
-            </br>
-            <Button onClick={handleSignUp} className={classes.root} variant="contained">Sign Up</Button>             
-
+        <Button onClick={handleLogin} className={classes.root} variant="contained">Log In</Button>             
+                                
         </div>
+        </>
     )
 }
+
+export default LoginForm1;

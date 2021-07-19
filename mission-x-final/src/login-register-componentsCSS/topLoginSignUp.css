@@ -24,7 +24,7 @@ a.loginLink1:hover, a.loginLinks:active{
 }
 
 
-.loginLink2 {
+.signUpLink2 {
     font-weight:800;
     font-size: x-large;
     color:slategray;
@@ -33,7 +33,7 @@ a.loginLink1:hover, a.loginLinks:active{
    
 }
 
-a.loginLink2:hover, a.loginLinks:active{
+a.signUpLink2:hover, a.loginLinks:active{
     text-decoration: underline #F4499B;
     text-decoration-thickness: 5px;
 

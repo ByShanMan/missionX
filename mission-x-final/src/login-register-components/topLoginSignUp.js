@@ -1,15 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
+
+import '../login-register-componentsCSS/topLoginSignUp.css';
 
 
-import '../componentsCSS/topLoginSignUp.css';
+export default function TopLoginSignUp({ activeButton, setActiveButton }) {    
 
-export default function topLoginSignUp() {
-    return (
-        <div className="loginLinks">
-           
-            <a className="loginLink1" href='#'>LOG IN</a>
-            <a className="loginLink2" href='#'>SIGN UP</a>
+        return (
+            <div className="loginLinks">
 
-        </div>
-    )
-}
+                <a className={activeButton === "b1" ? "loginLink3 loginActive" : "loginLink3"} 
+                    value="b1" 
+                    href='#'
+                    onClick={() => setActiveButton('b1')}>
+                    LOG IN</a>
+        
+                <a className={activeButton === "b2" ? "signupLink3 signupActive" : "signupLink3"}
+                  value="b2" 
+                  href='#'
+                  onClick={() => setActiveButton('b2')}>
+                    SIGN UP</a>
+                
+            </div>
+        )
+    }

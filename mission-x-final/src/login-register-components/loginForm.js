@@ -3,13 +3,14 @@ import ExitButton from './exitButton';
 import Avatar from './avatar';
 import TeacherAvatar from './teacherAvatar';
 import TopLoginSignUp from './topLoginSignUp';
-// import BottomLoginSignUp from './bottomLoginSignUp';
 import { makeStyles } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import axios from 'axios';
 import { useState } from 'react';
 
-import '../componentsCSS/loginForm.css';
+import '../login-register-componentsCSS/loginForm.css';
+import LoginForm1 from './LoginForm1';
+import SignUpForm from './signUpForm';
 
 const useStyles = makeStyles (theme => ({
     root: { 
@@ -29,62 +30,59 @@ const useStyles = makeStyles (theme => ({
 
 export default function LoginForm() {
 
-const classes = useStyles()
+    const classes = useStyles()
 
-const [email, setEmail] = useState('')
-const [password, setPassword] = useState('')
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const [activeButton, setActiveButton] = useState("b1");
+    var changeForm = "";
 
-const handleLogin = () => {
-    axios.post('http://localhost:4000/login', {
-        email: email,
-        password: password,
-    })
-    .then(response => {
-        console.log(response.status)
-        console.log("Login Successful")
-    })
-    .catch(err => {
-        console.log("Login Unsuccessful")
-        console.log(err)
-    })
-}
+    // const handleLogin = () => {
+    //     axios.post('http://localhost:4000/login', {
+    //         email: email,
+    //         password: password,
+    //     })
+    //     .then(response => {
+    //         console.log(response.status)
+    //         console.log("Login Successful")
+    //     })
+    //     .catch(err => {
+    //         console.log("Login Unsuccessful")
+    //         console.log(err)
+    //     })
+    //     }
 
-    return (
-        <div className="formContainer">
-            <div className="modalContentL">
+        if(activeButton === "b1") {
+            changeForm = <LoginForm1 />
+        } else {
+            changeForm = <SignUpForm />
+        }
+
+
+        return (
+            
+            <div className="formContainer">
+                <div className="modalContentL">
                     <div className="gridContainer"> 
                         <ExitButton />
                         <Avatar />
                         <div className="signUp">
-                            <TopLoginSignUp />
-                            <br />
-                            <br />                 
-                            <input className="email" value={email} onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Email Address"></input>
-                            <br />
-                            <input className="password" value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password"></input>            
-                        </div> 
-                        <Button onClick={handleLogin} className={classes.root} variant="contained">Log In</Button>             
-                        
-                    </div>
-                    
-            </div>
+                            <TopLoginSignUp activeButton={activeButton} setActiveButton={setActiveButton}/>
+                            {changeForm}
+                        </div>
+                     </div>   
+                </div>
 
-            <div className="modalContentR">
+                <div className="modalContentR">
                     <div className="gridContainer">
                         <TeacherAvatar />
                         <div className="signUp">
-                            <TopLoginSignUp />
-                            <br />
-                            <br />
-                            <input className="email" type="text" placeholder="Email Address"></input>
-                            <br />
-                            <input className="password" type="password" placeholder="Password"></input>
+                            <TopLoginSignUp activeButton={activeButton} setActiveButton={setActiveButton}/>
+                            {changeForm}
                         </div>
-                        <Button onClick={handleLogin} className={classes.root} variant="contained">Log In</Button> 
                     </div>
-                
+                </div>
             </div>
-        </div>
         
-    )
-}
+        )
+}  

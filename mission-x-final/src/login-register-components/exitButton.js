@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../componentsCSS/exitButton.css'
+import '../login-register-componentsCSS/exitButton.css'
 
 export default function exitButton() {
     return (
