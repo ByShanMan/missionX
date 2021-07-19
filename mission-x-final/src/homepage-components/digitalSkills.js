@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Grid } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 
 import DigitalSkillsCard from "./DigitalSkillsCard";
 import "../homepage-componentsCSS/digitalSkills.css";
@@ -10,57 +10,60 @@ const digitalSkillsArray = [
     id: 1,
     backgroundImage: "Mission-X-Images/homepageImages/creativityCard.png",
     overlayImage: "Mission-X-Images/homepageImages/creativityOverlay.png",
-    subtitle1: "Creativity ",
-    subtitle2: "& Individuality",
+    overlayTitle1: "Creativity ",
+    overlayTitle2: "& Individuality",
   },
   {
     id: 2,
     backgroundImage: "Mission-X-Images/homepageImages/criticalThinkingCard.png",
     overlayImage: "Mission-X-Images/homepageImages/criticalThinkingOverlay.png",
-    subtitle1: "Critical Thinking ",
-    subtitle2: "& Problem Solving",
+    overlayTitle1: "Critical Thinking ",
+    overlayTitle2: "& Problem Solving",
   },
   {
     id: 3,
     backgroundImage: "Mission-X-Images/homepageImages/communicationCard.png",
     overlayImage: "Mission-X-Images/homepageImages/communicationOverlay.png",
-    subtitle1: "Communication ",
-    subtitle2: "& Collaboration",
+    overlayTitle1: "Communication ",
+    overlayTitle2: "& Collaboration",
   },
   {
     id: 4,
     backgroundImage: "Mission-X-Images/homepageImages/futureFocusCard.png",
     overlayImage: "Mission-X-Images/homepageImages/futureFocusOverlay.png",
-    subtitle1: "Technology ",
-    subtitle2: "& Future Focus",
+    overlayTitle1: "Technology ",
+    overlayTitle2: "& Future Focus",
   },
 ];
 
 function createCard(dSkills) {
   return (
-  <DigitalSkillsCard
-    key={dSkills.id}
-    backgroundImage={dSkills.backgroundImage}
-    overlayIamge={dSkills.overlayIamge}
-    subtitle1={dSkills.subtitle1}
-    subtitle2={dSkills.subtitle2}
-  />
-)}
+    <DigitalSkillsCard
+      key={dSkills.id}
+      backgroundImage={dSkills.backgroundImage}
+      overlayImage={dSkills.overlayImage}
+      overlayTitle1={dSkills.overlayTitle1}
+      overlayTitle2={dSkills.overlayTitle2}
+    />
+  );
+}
 
 export default function DigitalSkills() {
   return (
-    <div className="digitalSkills">
-      <div className="digitalSkillsText">
-        <h3>
-          Teaching kids programming and digital skills is MORE than just writing
-          code.
-        </h3>
-      </div>
-      <div className="cardDisplay">
-        {digitalSkillsArray.map((item, i) => (
+    <Container maxWidth={"xl"}>
+      <div className="digitalSkills">
+        <div className="digitalSkillsText">
+          <h3>
+            Teaching kids programming and digital skills is MORE than just
+            writing code.
+          </h3>
+        </div>
+        <div className="cardDisplay">
+          {digitalSkillsArray.map((item, i) => (
             <div>{createCard(item)}</div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </Container>
   );
 }

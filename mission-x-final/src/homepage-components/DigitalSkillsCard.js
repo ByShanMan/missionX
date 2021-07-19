@@ -5,34 +5,34 @@ import { makeStyles } from "@material-ui/styles";
 const useStyles = makeStyles({
   cardLayout: {
     display: "flex",
-    justifyContent: "space-between",
+    width: "470px",
   },
   backgroundImg: {
-    height: "300px",
-  },
-  overlayImage: {
-    marginLeft: "-305px",
-    marginTop: "10px",
-    height: "120px",
+    height: "310px",
   },
   overlay: {
-    marginLeft: "-305px",
+    justifyItems: "center",
+    marginLeft: "-300px",
     marginTop: "10px",
-    height: "120px",
   },
-  subtitle1: {
-    fontSize: "30px",
+  overlayImage: {
+    spacing: 'em',
+    marginTop: "10px",
+    height: "150px"
+  },
+  overlayTitle1: {
+    fontSize: "28px",
     color: "white",
     textAlign: "center",
-    fontFamily: "Nunito",
-    fontWeight: "800",
+    fontWeight: "700",
+    marginLeft: "-20px",
   },
-  subtitle2: {
-    fontSize: "30px",
+  overLayTitle2: {
+    fontSize: "28px",
     color: "white",
     textAlign: "center",
-    fontFamily: "Nunito",
-    fontWeight: "800",
+    fontWeight: "700",
+    marginLeft: "-20px",
   },
 });
 
@@ -47,9 +47,11 @@ export default function DigitalSkillsCard(props) {
         alt=""
       />
       <div className={styles.overlay}>
-        <img className={styles.overlayImage} src={props.overlayImage} alt="" />
-        <p className={styles.subtitle1}>{props.subtitle1}</p>
-        <p className={styles.subtitle2}>{props.subtitle2}</p>
+        <div>
+          <img className={styles.overlayImage} src={props.overlayImage} alt="" />
+        </div>
+        <p className={styles.overlayTitle1}>{props.overlayTitle1}</p>
+        <p className={styles.overLayTitle2}>{props.overlayTitle2}</p>
       </div>
     </div>
   );
