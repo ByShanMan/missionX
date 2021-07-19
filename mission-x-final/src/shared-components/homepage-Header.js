@@ -13,7 +13,7 @@ export default function Header() {
           <div className="logo">
             <img
               className="logoPic"
-              src="/Mission-X-Images/homepageImages/logoWorks.png"
+              src="Mission-X-Images/shared-images/logoWorks.png"
               alt="level up logo"
             />
           </div>
@@ -26,11 +26,11 @@ export default function Header() {
             <div className="flags">
               <div className="lang">LANG</div>
               <img
-                src="/Mission-X-Images/homepageImages/NZFlag.png"
+                src="Mission-X-Images/shared-images/NZFlag.png"
                 alt="nz flag"
               />
               <img
-                src="/Mission-X-Images/homepageImages/MaoriFlag.png"
+                src="Mission-X-Images/shared-images/MaoriFlag.png"
                 alt="maori flag"
               />
             </div>
@@ -38,7 +38,7 @@ export default function Header() {
               <div className="avatar">
                 <img
                   className="profileIcon"
-                  src="homepageIMG/headerIMGS/profileIcon.png"
+                  src="Mission-X-Images/shared-images/profileIcon.png"
                 />
               </div>
               <div className="loginButtons">

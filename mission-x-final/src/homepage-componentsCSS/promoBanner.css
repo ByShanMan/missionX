@@ -1,22 +1,24 @@
 .babyImage {
-    height: 450px;
+    height: 500px;
     width: 100%;
 }
 
 .promoText {
-    margin-left: 10%;
-    margin-top: -360px;
+    margin-left: 10em;
+    margin-top: -530px;
     width: 40%;
 }
+.span {
+    color: #45C1F6 }
 
 .prepareYoungMinds {
     color: #767676;
-    font-size: 48px;
+    font-size: 68px;
     margin-bottom: 0;
 }
 
 .letUsHelpYou {
-    font-size: 22px;
+    font-size: 30px;
     color: #767676;
 }
 
@@ -26,10 +28,12 @@
 
 .subtext {
     color: #767676;
-    font-size: 11px;
+    font-size: 16px;
+    margin-left: 60%;
+    padding-right: 10%
 }
 
 .buttonGroup {
     display: flex;
-    margin-left: 10%
+    margin-left: 24%
 }

@@ -1,0 +1,10 @@
+.digitalSkills {
+    display:flex;
+    flex-direction:column;
+}
+.digitalSkillsText {
+    font-size: 26px;
+}
+.cardDisplay {
+    display:flex;
+}

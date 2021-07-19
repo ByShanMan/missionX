@@ -5,7 +5,6 @@ import { Grid } from "@material-ui/core";
 import DigitalSkillsCard from "./DigitalSkillsCard";
 import "../homepage-componentsCSS/digitalSkills.css";
 
-
 const digitalSkillsArray = [
   {
     id: 1,
@@ -38,13 +37,15 @@ const digitalSkillsArray = [
 ];
 
 function createCard(dSkills) {
+  return (
   <DigitalSkillsCard
+    key={dSkills.id}
     backgroundImage={dSkills.backgroundImage}
     overlayIamge={dSkills.overlayIamge}
     subtitle1={dSkills.subtitle1}
     subtitle2={dSkills.subtitle2}
-  />;
-}
+  />
+)}
 
 export default function DigitalSkills() {
   return (
@@ -55,13 +56,11 @@ export default function DigitalSkills() {
           code.
         </h3>
       </div>
-      <Grid container spacing={12}>
+      <div className="cardDisplay">
         {digitalSkillsArray.map((item, i) => (
-          <Grid item xs={3}>
-            {createCard(item)}
-          </Grid>
+            <div>{createCard(item)}</div>
         ))}
-      </Grid>
+      </div>
     </div>
   );
 }

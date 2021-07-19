@@ -1,6 +1,7 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
-import Container from "@material-ui/core/Container";
+
+import { Button } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 
 import "../homepage-componentsCSS/promoBanner.css";
@@ -40,20 +41,18 @@ export default function PromoBanner() {
         <img
           className="babyImage"
           src="Mission-X-Images/homepageImages/babyBanner.png"
-          alt="baby image"
         />
 
         <div className="promoText">
           <Container maxWidth="xl">
             <h1 className="prepareYoungMinds">
-              Prepare young minds for a better{" "}
-              <span style={{ color: "#45C1F6" }}>future.</span>
+              Prepare young minds for a better <span>future.</span>
             </h1>
             <p className="letUsHelpYou">
               Let us help you advance students in Digital Technologies and other
               learning areas with our project-based learning programme.
             </p>
-            <div className="ButtonGroup">
+            <div className="buttonGroup">
               <div>
                 <Button
                   variant="outlined"
@@ -72,12 +71,11 @@ export default function PromoBanner() {
                 >
                   SIGN UP
                 </Button>
-                <p className="subtext">
-                  *Basic subscription includes the first 15 projects free of
-                  charge.
-                </p>
               </div>
             </div>
+            <p className="subtext">
+              *Basic subscription includes the first 15 projects free of charge.
+            </p>
           </Container>
         </div>
       </div>

@@ -1,35 +1,44 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
-import Grid from "@material-ui/core/Grid";
-import Container from "@material-ui/core/Container";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import Radio from "@material-ui/core/Radio";
+import { Container } from "@material-ui/core";
+import { RadioGroup } from "@material-ui/core";
+import { Radio } from "@material-ui/core";
+import { makeStyles } from "@material-ui/styles";
 
 import WeOfferCard from "./weOfferCard.js";
-
 import "../homepage-componentsCSS/weOffer.css";
+
+const useStyles = makeStyles({
+  root: {
+    justifyContent: "center",
+  }
+})
 
 const weOfferArray = [
   {
-    buttonValue: "b1",
+    id: "1",
+    value: "b1",
     backgroundImage: "Mission-X-Images/homepageImages/backgroundCard.png",
     overlayImage: "Mission-X-Images/homepageImages/animationOverlay.png",
     title: "ANIMATION",
   },
   {
-    buttonValue: "b2",
+    id: "2",
+    value: "b2",
     backgroundImage: "Mission-X-Images/homepageImages/backgroundCard.png",
     overlayImage: "Mission-X-Images/homepageImages/gamesOverlay.png",
     title: "GAMES",
   },
   {
-    buttonValue: "b3",
+    id: "3",
+    value: "b3",
     backgroundImage: "Mission-X-Images/homepageImages/backgroundCard.png",
     overlayImage: "Mission-X-Images/homepageImages/chatbotOverlay.png",
     title: "CHATBOT",
   },
   {
-    buttonValue: "b4",
+    id: "4",
+    value: "b4",
     backgroundImage: "Mission-X-Images/homepageImages/backgroundCard.png",
     overlayImage: "Mission-X-Images/homepageImages/augmentedReality.png",
     title: "AUGMENTED REALITY",
@@ -37,46 +46,61 @@ const weOfferArray = [
 ];
 
 function createOfferCard(offerCard) {
-  <WeOfferCard
-    buttonValue={offerCard.buttonValue}
-    backgroundImage={offerCard.backgroundImg}
-    overlayImage={offerCard.offerImage}
-    title={offerCard.title}
-  />;
+  offerCard = offerCard[0];
+  return (
+    <WeOfferCard
+      key={offerCard.id}
+      value={offerCard.value}
+      backgroundImage={offerCard.backgroundImage}
+      overlayImage={offerCard.overlayImage}
+      title={offerCard.title}
+    />
+  );
 }
 
 export default function WeOffer() {
+  const styles = useStyles();
   const [activeButton, setActiveButton] = useState("b1");
   var laptopScreen = "";
 
   const handleClick = (e) => {
-    console.log(e);
     setActiveButton(e.target.value);
   };
 
   if (activeButton === "b1") {
     laptopScreen = (
-      <img src="Mission-X-Images/homepageImages/animationScreen.png" />
+      <img
+        className="laptopScreen"
+        src="Mission-X-Images/homepageImages/animationScreen.png"
+      />
     );
   } else if (activeButton === "b2") {
     laptopScreen = (
-      <img src="Mission-X-Images/homepageImages/gamesScreen.png" />
+      <img
+        className="laptopScreen"
+        src="Mission-X-Images/homepageImages/gamesScreen.png"
+      />
     );
   } else if (activeButton === "b3") {
     laptopScreen = (
-      <img src="Mission-X-Images/homepageImages/chatbotScreen.png" />
+      <img
+        className="laptopScreen"
+        src="Mission-X-Images/homepageImages/chatbotScreen.png"
+      />
     );
   } else if (activeButton === "b4") {
     laptopScreen = (
-      <img src="Mission-X-Images/homepageImages/augmentedScreen.png" />
+      <img
+        className="laptopScreen"
+        src="Mission-X-Images/homepageImages/augmentedScreen.png"
+      />
     );
   }
 
   return (
-    <div className="weOffer">
-      {/* <Container className="weOfferContainer" maxWidth="xl"> */}
-      <Grid container spacing={2} className="weOfferLeft">
-        <Grid item xs={6}>
+    <Container maxWidth="xl">
+      <div className="weOffer">
+        <div>
           <div className="weOfferText">
             <h2>What we offer</h2>
             <p>
@@ -85,50 +109,25 @@ export default function WeOffer() {
               designed by New Zealand's leading import PropTypes from
               'prop-types' industry experts and schools.
             </p>
-            <h3>What will students create?</h3>
           </div>
-        </Grid>
-        {weOfferArray.map((item, i) => (
-          <Grid item xs={8}>
-            {createOfferCard(item)}
-          </Grid>
-        ))}
-      </Grid>
+          <h3 className="weOfferText2">What will students create?</h3>
+          <div className="weOfferCards">
+            {weOfferArray.map((item, i) => (
+              <div className="mapCards">{createOfferCard([item])}</div>
+            ))}
+          </div>
+        </div>
 
-      <div className="weOfferPic">
-        <img className="laptopScreen" src={laptopScreen} alt="" />
-        <RadioGroup className="radioButtons">
-          <Radio
-            value="b1"
-            className={
-              activeButton === "b1" ? "buttonStyle active" : "buttonStyle"
-            }
-            onClick={handleClick}
-          />
-          <Radio
-            value="b1"
-            className={
-              activeButton === "b2" ? "buttonStyle active" : "buttonStyle"
-            }
-            onClick={handleClick}
-          />
-          <Radio
-            value="b1"
-            className={
-              activeButton === "b3" ? "buttonStyle active" : "buttonStyle"
-            }
-            onClick={handleClick}
-          />
-          <Radio
-            value="b1"
-            className={
-              activeButton === "b4" ? "buttonStyle active" : "buttonStyle"
-            }
-            onClick={handleClick}
-          />
-        </RadioGroup>
+        <div className="weOfferPic">
+          <div>{laptopScreen}</div>
+          <RadioGroup className={styles.root} row margin="dense">
+            <Radio value="b1" onClick={handleClick} />
+            <Radio value="b2" onClick={handleClick} />
+            <Radio value="b3" onClick={handleClick} />
+            <Radio value="b4" onClick={handleClick} />
+          </RadioGroup>
+        </div>
       </div>
-      {/* </Container> */}
-    </div>
+    </Container>
   );
 }

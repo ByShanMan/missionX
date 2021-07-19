@@ -127,7 +127,7 @@ export default function InfoBlock() {
   var textBox = "";
 
   const handleClick = (e) => {
-    console.log(e);
+    // console.log(e);
     setActiveButton(e.target.value);
   };
 

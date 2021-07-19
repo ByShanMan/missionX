@@ -1,32 +1,93 @@
 import React from "react";
 
-import '../homepage-componentsCSS/bottomPromo.css'
+import { Container } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
+import { Button } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
+import { makeStyles } from "@material-ui/styles";
+
+import "../homepage-componentsCSS/bottomPromo.css";
+import { fontSize } from "@material-ui/system";
+
+const useStyles = makeStyles(
+  {
+    root: {
+      display: "flex"
+    },
+    leftImage: {
+      maxHeight: "450px",
+      marginLeft: "20%",
+      marginTop: "10%",
+      marginBottom: "10%"
+    },
+    rightText: {
+      paddingTop: "7%",
+      paddingLeft: "2%",
+      paddingRight: "5%"
+    },
+    textHeading: {
+      paddingBottom: "5%"
+    },
+    textSubHeading: {
+      paddingBottom: "5%"
+    },
+    textInfo: {
+      paddingBottom: "5%",
+      fontSize: "26px"
+    },
+    btnEnquire: {
+      border: "4px solid #43C0F6",
+      background: "#fff",
+      color: "#767676",
+      fontFamily: "Segoe UI",
+      fontWeight: "bold",
+      fontSize: "20px",
+      padding: "0em 2em",
+      borderRadius: "10px",
+    },
+    btnSignUp: {
+      color: "white",
+      background: "#F91C85",
+      padding: "0.2em 3em",
+      fontFamily: "Segoe UI",
+      fontWeight: "bold",
+      fontSize: "20px",
+      borderRadius: "10px",
+      marginLeft: "2rem",
+    },
+    
+});
 
 export default function BottomPromo() {
+  const styles = useStyles();
+
   return (
-    <div className="bottomPromo">
-      <div className="bottomPromoPic">
-        <img
-          src="/Mission-X-Images/homepageImages/bottomPromoCard.png"
-          alt=""
-        />
-      </div>
-      <div className="bottomPromoText">
-        <h2>What are you waiting for?</h2>
-        <br />
-        <br />
-        <h3>Start teaching Digital Technologies today.</h3>
-        <br />
-        <br />
-        <p>
-          If you need more information, we are happy to answer any questions you
-          may have.
-        </p>
-        <div className="bottomPromoButtons">
-          <button className="button1">ENQUIRE NOW</button>
-          <button className="button2">SIGN UP</button>
-        </div>
-      </div>
-    </div>
+    <Container maxWidth={"xl"} className={styles.root}>
+      <Grid container spacing={12}>
+        <Grid item xs={6}>
+          <img
+            className={styles.leftImage}
+            src="Mission-X-Images/homepageImages/bottomPromoCard.png"
+            alt=""
+          />
+        </Grid>
+        <Grid item xs={6} className={styles.rightText}>
+          <Typography variant="h2" className={styles.textHeading}>
+            What are you waiting for?
+          </Typography>
+          <Typography variant="h4" className={styles.textSubHeading}>
+            Start teaching Digital Technologies today.
+          </Typography>
+          <Typography variant="body2" className={styles.textInfo}>
+            If you need more information, we are happy to answer any questions you
+            may have.
+          </Typography>
+          <div className={styles.rightButtons}>
+            <Button className={styles.btnEnquire}>ENQUIRE NOW</Button>
+            <Button className={styles.btnSignUp} variant="contained">SIGN UP</Button>
+          </div>
+        </Grid>
+      </Grid>
+    </Container>
   );
 }

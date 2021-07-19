@@ -14,9 +14,9 @@ export default function Homepage() {
       <Header />
       <PromoBanner />
       <WeOffer />
-      {/*<DigitalSkills />
-            <InfoBlock />
-      <BottomBanner />*/}
+      <DigitalSkills />
+      <InfoBlock />
+      <BottomPromo />
       <Footer /> 
     </div>
   );
