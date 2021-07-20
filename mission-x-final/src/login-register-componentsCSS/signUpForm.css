@@ -8,8 +8,9 @@
     border-color: lightgrey;
     border-radius: 7px;
     border-block-width: 1px;
+    margin-top: 280px;
     padding: 5px;
-    width: 200px;
+    width: 240px;
     
 }
 
@@ -20,7 +21,7 @@
     border-radius: 7px;
     border-block-width: 1px;
     padding: 5px;
-    width: 200px;
+    width: 240px;
 }
 
 .newPassword {
@@ -30,7 +31,7 @@
     border-radius: 7px;
     border-block-width: 1px;
     padding: 5px;
-    width: 200px;
+    width: 240px;
 
 }
 
@@ -41,7 +42,8 @@
     border-radius: 7px;
     border-block-width: 1px;
     padding: 5px;
-    width: 200px;
+    width: 240px;
+    margin-bottom: 30px;
 }
 
 .signUpInput {

@@ -3,14 +3,11 @@
 }
 
 .loginLinks {
+    position:fixed;
     display: flex;
-    justify-content: center;  
-   
-}
-
-.loginLinks {
-    display: flex;
-    justify-content: center;
+    justify-content: center; 
+    margin-top: 30px;
+    margin-bottom: 100px;
    
 }
 
@@ -19,7 +16,7 @@
     font-size: x-large;
     color:slategray;
     text-decoration: none;
-    padding-right: 20px;
+    padding-right: 65px;
 }
 
 .signupLink3 {

@@ -4,8 +4,6 @@ import Avatar from './avatar';
 import TeacherAvatar from './teacherAvatar';
 import TopLoginSignUp from './topLoginSignUp';
 import { makeStyles } from '@material-ui/core';
-import { Button } from '@material-ui/core';
-import axios from 'axios';
 import { useState } from 'react';
 
 import '../login-register-componentsCSS/loginForm.css';
@@ -32,25 +30,8 @@ export default function LoginForm() {
 
     const classes = useStyles()
 
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
     const [activeButton, setActiveButton] = useState("b1");
     var changeForm = "";
-
-    // const handleLogin = () => {
-    //     axios.post('http://localhost:4000/login', {
-    //         email: email,
-    //         password: password,
-    //     })
-    //     .then(response => {
-    //         console.log(response.status)
-    //         console.log("Login Successful")
-    //     })
-    //     .catch(err => {
-    //         console.log("Login Unsuccessful")`
-    //         console.log(err)
-    //     })
-    //     }
 
         if(activeButton === "form1") {
             changeForm = <LoginForm1 />
