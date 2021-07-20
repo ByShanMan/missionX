@@ -1,48 +1,22 @@
-.infoBlock {
-    padding: 2%;
+.bkcolor {
+    background: #EFEFF1;
+    padding: 2em;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.mainBackground {
+    background: #EFEFF1;
+}
+.infoContentText {
     display: flex;
-    flex-direction: column;
-    /* height: 900px;   */
-/* justify-content: center; 
-  align-items: center;
-  align-self:center; */
-
 }
-.infoBlock h2 {
-    font-size: 40px;
-    text-align: center;
-}
-.infoBlockButtons {
-    /* position: relative; */
-    left: 260px;
-    top: 20px;
-    /* border: solid 1px; */
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    height: 20px;
-    width: 1200px;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    margin-left:15%;
-}
-.buttonStyle {
-    min-width: 230px;
-    height: 33px;
-    background:white;
-    border-radius: 8px;
-    border: 4px solid #43C0F6;
-    font-family: "Nunito";
-    font-weight: 900;
+.infoContentText h3 {
     font-size: 24px;
 }
-.active {
-    background:#EFEFF1;
-    border:#EFEFF1;
+.infoContentText p {
+    font-size: 20px;
 }
-
-@media screen and (max-width: 1000px) {
-    .infoBlockButtons {
-        flex-direction:column;
-    }
+.infoBoxTitle {
+    font-size: 24px;
 }

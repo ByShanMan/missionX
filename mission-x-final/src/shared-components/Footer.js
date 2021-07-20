@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   footerGrid: {
     display: "flex",
     alignItems: "flex-start",
-    marginLeft: "7%",
+    marginLeft: "5em",
 
     paddingLeft: "5%",
     paddingRight: "5%",

@@ -42,9 +42,9 @@ export default function PromoBanner() {
           className="babyImage"
           src="Mission-X-Images/homepageImages/babyBanner.png"
         />
-
+      </div>
+      <Container maxWidth={"xl"}>
         <div className="promoText">
-          <Container maxWidth="xl">
             <h1 className="prepareYoungMinds">
               Prepare young minds for a better <span>future.</span>
             </h1>
@@ -76,9 +76,8 @@ export default function PromoBanner() {
             <p className="subtext">
               *Basic subscription includes the first 15 projects free of charge.
             </p>
-          </Container>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

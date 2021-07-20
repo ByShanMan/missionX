@@ -1,13 +1,15 @@
 import React, { useState } from "react";
-import InfoBoxText from "./infoBox";
 
-import "../homepage-componentsCSS/infoBlock.css"
+import { Container } from "@material-ui/core";
+
+import InfoBoxText from "./infoBox";
+import "../homepage-componentsCSS/infoBlock.css";
 
 const InfoBoxArray = [
   {
     id: 0,
     name: "Learning Pathways",
-    imgURL: "homepageIMG/infoBlockIMGs/StarLogo.png",
+    imgURL: "Mission-X-Images/homepageImages/StarLogo.png",
 
     main: "Interlinking Pathways",
     title:
@@ -36,7 +38,7 @@ const InfoBoxArray = [
   {
     id: 1,
     name: "Digital Technology",
-    imgURL: "homepageIMG/infoBlockIMGs/StarLogo.png",
+    imgURL: "Mission-X-Images/homepageImages/StarLogo.png",
 
     main: "Expands Knowledge Base",
     title:
@@ -65,7 +67,7 @@ const InfoBoxArray = [
   {
     id: 2,
     name: "Key Competencies",
-    imgURL: "homepageIMG/infoBlockIMGs/StarLogo.png",
+    imgURL: "Mission-X-Images/homepageImages/StarLogo.png",
 
     main: "Enhance Key Competencies",
     title:
@@ -94,7 +96,7 @@ const InfoBoxArray = [
   {
     id: 3,
     name: "IR4.0",
-    imgURL: "homepageIMG/infoBlockIMGs/StarLogo.png",
+    imgURL: "Mission-X-Images/homepageImages/StarLogo.png",
 
     main: "IR4.0",
     title:
@@ -142,53 +144,55 @@ export default function InfoBlock() {
   }
 
   return (
-    <div className="infoBlock">
-      <h2 className="infoBlockTitle">
-        How our programmes helps teachers and students
-      </h2>
+    <Container maxWidth={"xl"}>
+      <div className="infoBlock">
+        <h2 className="infoBlockTitle">
+          How our programmes helps teachers and students
+        </h2>
 
-      <div className="infoBlockButtons">
-        <button
-          value="b1"
-          className={
-            activeButton === "b1" ? "buttonStyle active" : "buttonStyle"
-          }
-          onClick={handleClick}
-        >
-          LEARNING PATHWAYS
-        </button>
-        <button
-          value="b2"
-          className={
-            activeButton === "b2" ? "buttonStyle active" : "buttonStyle"
-          }
-          onClick={handleClick}
-        >
-          DIGITAL TECHNOLOGY
-        </button>
-        <button
-          value="b3"
-          className={
-            activeButton === "b3" ? "buttonStyle active" : "buttonStyle"
-          }
-          onClick={handleClick}
-        >
-          KEY COMPETENCIES
-        </button>
-        <button
-          value="b4"
-          className={
-            activeButton === "b4" ? "buttonStyle active" : "buttonStyle"
-          }
-          onClick={handleClick}
-        >
-          IR 4.0
-        </button>
-      </div>
+        <div className="infoBlockButtons">
+          <button
+            value="b1"
+            className={
+              activeButton === "b1" ? "buttonStyle active" : "buttonStyle"
+            }
+            onClick={handleClick}
+          >
+            LEARNING PATHWAYS
+          </button>
+          <button
+            value="b2"
+            className={
+              activeButton === "b2" ? "buttonStyle active" : "buttonStyle"
+            }
+            onClick={handleClick}
+          >
+            DIGITAL TECHNOLOGY
+          </button>
+          <button
+            value="b3"
+            className={
+              activeButton === "b3" ? "buttonStyle active" : "buttonStyle"
+            }
+            onClick={handleClick}
+          >
+            KEY COMPETENCIES
+          </button>
+          <button
+            value="b4"
+            className={
+              activeButton === "b4" ? "buttonStyle active" : "buttonStyle"
+            }
+            onClick={handleClick}
+          >
+            IR 4.0
+          </button>
+        </div>
 
-      <div className="infoBlockText">
-        <div className="infoBlockTextBox">{textBox}</div>
+        <div className="infoBlockText">
+          <div className="infoBlockTextBox">{textBox}</div>
+        </div>
       </div>
-    </div>
+    </Container>
   );
 }
