@@ -69,15 +69,6 @@ export default function AvatarCard({selectedUser}) {
                     className={styles.avCardButtons}
                     >
                     CHANGE PHOTO
-                    </Button>                 
-                    <Button
-                    variant ='outlined'
-                    size = "large"
-                    color = "primary" 
-                    className={styles.avCardButtons}
-                    
-                    >
-                    SETTINGS
                     </Button>
                 </div>
             </CardContent>
