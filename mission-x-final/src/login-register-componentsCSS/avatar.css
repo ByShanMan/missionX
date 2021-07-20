@@ -14,10 +14,12 @@
 .avatar1 {
     width: 100%;
 }
+
 .avatarName {
-    color: slategray;
+    color: #767676;
     display: flex;
     justify-content: center;
     font-size: 40px;
+    
 }
 

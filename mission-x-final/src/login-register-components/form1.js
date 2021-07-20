@@ -22,7 +22,7 @@ const useStyles = makeStyles (theme => ({
     }
 }));
 
-function LoginForm1() {
+function Form1() {
 
     const classes = useStyles()
 
@@ -60,4 +60,4 @@ function LoginForm1() {
     )
 }
 
-export default LoginForm1;
+export default Form1;

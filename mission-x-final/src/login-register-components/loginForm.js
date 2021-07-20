@@ -7,7 +7,7 @@ import { makeStyles } from '@material-ui/core';
 import { useState } from 'react';
 
 import '../login-register-componentsCSS/loginForm.css';
-import LoginForm1 from './LoginForm1';
+import Form1 from './form1';
 import SignUpForm from './signUpForm';
 
 const useStyles = makeStyles (theme => ({
@@ -34,7 +34,7 @@ export default function LoginForm() {
     var changeForm = "";
 
         if(activeButton === "form1") {
-            changeForm = <LoginForm1 />
+            changeForm = <Form1 />
         } else {
             changeForm = <SignUpForm />
         }
