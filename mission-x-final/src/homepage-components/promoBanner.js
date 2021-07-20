@@ -41,6 +41,7 @@ export default function PromoBanner() {
         <img
           className="babyImage"
           src="Mission-X-Images/homepageImages/babyBanner.png"
+          alt=""
         />
       </div>
       <Container maxWidth={"xl"}>

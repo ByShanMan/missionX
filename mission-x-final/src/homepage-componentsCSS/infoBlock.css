@@ -2,21 +2,25 @@
     padding: 2%;
     display: flex;
     flex-direction: column;
+    color: #767676;
 }
-.infoBlock h2 {
+.infoBlockTitle {
     font-size: 40px;
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 .infoBlockButtons {
     display: flex;
     justify-content: space-around;
     height: 40px;
-    width: 70%;
+    width: 80%;
     margin-top: 10px;
     margin-bottom: 50px;
-    margin-left: 19em;
+    margin-left: 10em;
 }
 .buttonStyle {
+    color: #767676;
     min-width: 280px;
     height: 40px;
     background:white;

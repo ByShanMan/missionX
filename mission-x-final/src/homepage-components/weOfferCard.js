@@ -6,6 +6,7 @@ const useStyles = makeStyles({
   cardLayout: {
     display: "flex",
     justifyContent: "center",
+    alignItems: "center"
   },
   backgroundImg: {
     height: "230px",

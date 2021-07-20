@@ -11,8 +11,9 @@ const useStyles = makeStyles({
     height: "310px",
   },
   overlay: {
+    textAlign: "center",
     justifyItems: "center",
-    marginLeft: "-300px",
+    marginLeft: "-360px",
     marginTop: "10px",
   },
   overlayImage: {
@@ -21,18 +22,14 @@ const useStyles = makeStyles({
     height: "150px"
   },
   overlayTitle1: {
-    fontSize: "28px",
+    fontSize: "36px",
     color: "white",
-    textAlign: "center",
     fontWeight: "700",
-    marginLeft: "-20px",
   },
   overLayTitle2: {
-    fontSize: "28px",
+    fontSize: "36px",
     color: "white",
-    textAlign: "center",
     fontWeight: "700",
-    marginLeft: "-20px",
   },
 });
 

@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   footerGrid: {
     display: "flex",
     alignItems: "flex-start",
-    marginLeft: "5em",
+    marginLeft: "3em",
 
     paddingLeft: "5%",
     paddingRight: "5%",
@@ -22,16 +22,22 @@ const useStyles = makeStyles({
     paddingBottom: "10%",
   },
   footTitle: {
+    fontFamily: 'Nunito',
+    fontSize: "26px",
     display: "flex",
     width: "250px",
     marginBottom: "2em",
     color: "rgb(112,112,112)",
   },
   footColumn: {
+    fontFamily: 'Nunito',
+    fontSize: "20px",
     width: "auto",
     color: "rgb(112,112,112)",
   },
   levelUpColumn: {
+    fontFamily: 'Nunito',
+    fontSize: "20px",
     width: "500px",
     color: "rgb(112,112,112)",
   },

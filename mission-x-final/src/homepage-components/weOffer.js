@@ -67,6 +67,10 @@ export default function WeOffer() {
     setActiveButton(e.target.value);
   };
 
+  const handleBigClick = (i) => {
+    setActiveButton('b' + i);
+  }
+
   if (activeButton === "b1") {
     laptopScreen = (
       <img
@@ -113,14 +117,14 @@ export default function WeOffer() {
           <h3 className="weOfferText2">What will students create?</h3>
           <div className="weOfferCards">
             {weOfferArray.map((item, i) => (
-              <div className="mapCards">{createOfferCard([item])}</div>
+              <div onClick={() => handleBigClick(i + 1)} className="mapCards">{createOfferCard([item])}</div>
             ))}
           </div>
         </div>
 
         <div className="weOfferPic">
           <div>{laptopScreen}</div>
-          <RadioGroup className={styles.root} row margin="dense">
+          <RadioGroup className={styles.root} value={activeButton} row margin="dense">
             <Radio value="b1" onClick={handleClick} />
             <Radio value="b2" onClick={handleClick} />
             <Radio value="b3" onClick={handleClick} />

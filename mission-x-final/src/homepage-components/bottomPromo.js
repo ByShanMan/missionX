@@ -6,13 +6,12 @@ import { Button } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 
-import "../homepage-componentsCSS/bottomPromo.css";
-import { fontSize } from "@material-ui/system";
-
 const useStyles = makeStyles(
   {
     root: {
-      display: "flex"
+      display: "flex",
+      marginBottom: "6em",
+      marginTop: "3em",
     },
     leftImage: {
       maxHeight: "450px",
@@ -21,19 +20,24 @@ const useStyles = makeStyles(
       marginBottom: "10%"
     },
     rightText: {
+    
+      color: '#767676',
       paddingTop: "7%",
-      paddingLeft: "2%",
-      paddingRight: "5%"
+      paddingLeft: "4%",
+      paddingRight: "7%"
     },
     textHeading: {
-      paddingBottom: "5%"
+      paddingBottom: "5%",
+      fontFamily: 'Nunito',
     },
     textSubHeading: {
-      paddingBottom: "5%"
+      paddingBottom: "5%",
+      fontFamily: 'Nunito',
     },
     textInfo: {
       paddingBottom: "5%",
-      fontSize: "26px"
+      fontSize: "26px",
+      fontFamily: 'Nunito',
     },
     btnEnquire: {
       border: "4px solid #43C0F6",
