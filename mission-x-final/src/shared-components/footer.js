@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
-import '../componentsCSS/footer.css'
+import '../shared-componentsCSS/footer.css'
 
 function Footer() {
     return (

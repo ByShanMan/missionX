@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '..sharedComponents/header'
+import Header from '../shared-components/header'
 import ProjectTitle from './projectTitle'
 import CardDifficulty from './cardDifficulty'
 import NumberOfCards from './numberOfCards'
@@ -7,11 +7,11 @@ import ProjectCards from './projectCards'
 import SelectMenu from './selectMenu'
 import BackUp from './backUp'
 import Grid from '@material-ui/core/Grid';
-import Footer from '..sharedComponents/footer';
+import Footer from '../shared-components/footer'
 
 import studentProjects from './studentProjectsArr';
 
-import '../componentsCSS/projectsPage.css'
+import '../student-projects-page-componentsCSS/projectsPage.css'
 
 function createProject(project){
     return (

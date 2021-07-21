@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '@material-ui/core'
 
-import '../componentsCSS/numberOfCards.css'
+import '../student-projects-page-componentsCSS/numberOfCards.css'
 
 export default function NumberOfCards() {
     return (

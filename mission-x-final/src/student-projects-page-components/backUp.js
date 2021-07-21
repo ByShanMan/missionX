@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@material-ui/core';
 import { orange } from '@material-ui/core/colors'
 
-import '../componentsCSS/backUp.css'
+import '../student-projects-page-componentsCSS/backUp.css'
 
 function BackUp() {
     return (

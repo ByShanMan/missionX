@@ -1,6 +1,6 @@
 import React from 'react'
 
-import "../componentsCSS/projectTitle.css"
+import "../student-projects-page-componentsCSS/projectTitle.css"
 
 export default function projectTitle() {
     return (

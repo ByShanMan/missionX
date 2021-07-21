@@ -1,7 +1,7 @@
 import React from 'react'
 import { Avatar } from '@material-ui/core';
 
-import "../componentsCSS/header.css"
+import "../shared-componentsCSS/header.css"
 
 export default function Header() {
     return (

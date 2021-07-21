@@ -1,5 +1,5 @@
 import React from 'react'
-import '../componentsCSS/projectCards.css'
+import '../student-projects-page-componentsCSS/projectCards.css'
 
 
 function ProjectCard(props) {
