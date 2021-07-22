@@ -22,32 +22,39 @@ const useStyles = makeStyles (theme => ({
 }));
 
 export default function SignUpForm() {
-
+   
     const classes = useStyles()
 
+    const [fullName, setFullName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [confirmPassword, setConfirmPassword] = useState('')
 
     const handleSignUp = () => {
-        axios.post('http://localhost:4000/login', {
+        axios.post('http://localhost:4000/signup', {
+            fullName: first_name, last_name,
             email: email,
             password: password,
+            confirmPassword: confirmPassword,
         })
         .then(response => {
             console.log(response.status)
-            console.log("Login Successful")
+            console.log("Sign Up Successful!")
         })
         .catch(err => {
-            console.log("Login Unsuccessful")
+            console.log("Sign Up Unsuccessful")
             console.log(err)
         })
     }
 
+    // const name = fullName.split(' ');
+    const first_name = fullName.split(' ').slice(0, -1).join(' ');
+    const last_name = fullName.split(' ').slice(1).join(' ');
+
     return (
 
         <div className="signUpInput">
-            <input className="fullName" onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Full Name"></input>
+            <input className="fullName" value={fullName} onChange={(e) => setFullName(e.target.value)} type="text" placeholder="Full Name"></input>
             <br>
             </br>
             <br>
