@@ -39,10 +39,14 @@ export default function SignUpForm() {
             confirmPassword: confirmPassword,
         })
         .then(response => {
+            setMessage("Login Successful!");
+            setOpen(true);
             console.log(response.status)
             console.log("Sign Up Successful!")
         })
         .catch(err => {
+            setMessage("Login Unsuccessful");
+            setOpen(true);
             console.log("Sign Up Unsuccessful")
             console.log(err)
         })
@@ -78,7 +82,15 @@ export default function SignUpForm() {
             <br>
             </br>
             <Button onClick={handleSignUp} className={classes.root} variant="contained">Sign Up</Button>             
-
+            <div>
+            <Snackbar
+          anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+          autoHideDuration={3000}
+          open={open}
+          onClose={() => setOpen(false)}
+          message={message}
+        />
+            </div>
         </div>
     )
 }
