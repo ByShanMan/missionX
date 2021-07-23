@@ -32,7 +32,8 @@ export default function SignUpForm() {
 
     const handleSignUp = () => {
         axios.post('http://localhost:4000/signup', {
-            fullName: first_name, last_name,
+            firstName: first_name,
+            lastName: last_name, 
             email: email,
             password: password,
             confirmPassword: confirmPassword,
@@ -49,7 +50,9 @@ export default function SignUpForm() {
 
     // const name = fullName.split(' ');
     const first_name = fullName.split(' ').slice(0, -1).join(' ');
+    console.log(first_name);
     const last_name = fullName.split(' ').slice(1).join(' ');
+    console.log(last_name);
 
     return (
 
