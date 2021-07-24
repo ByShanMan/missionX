@@ -41,42 +41,6 @@ export default function StudentProfiles({setSelectedUser}) {
         .catch((err) => {
             console.log(err)
         })
-
-        //     setStudentUsers([
-        //     { 
-        //          id: 1,
-        //          imgURL:'profile_pics/aiden.png',
-        //          first_name:"Aie",
-        //          teacher: "Jasmina Salvador", 
-        //          last_name:"L'trelle", 
-        //          school:"Homai",
-        //          date_of_birth:"2007-04-26",
-        //          contact_number: "0225324845",
-        //          email:"big_trelle@homai.edu", 
-        //     },
-        //     { 
-        //         id: 2,
-        //         imgURL: 'profile_pics/lisa.png',
-        //         first_name:"Lizzan",
-        //         teacher: "Jasmina Salvador", 
-        //         last_name:"D'man", 
-        //         school:"Homai",
-        //         date_of_birth:"2010-03-21",
-        //         contact_number: "0229876545",
-        //         email:"d_mansizzle@homai.edu", 
-        //     },
-        //     { 
-        //         id: 3,
-        //         imgURL: 'profile_pics/courtney.png',
-        //         first_name:"Tinoh",
-        //         teacher: "Jasmina Salvador", 
-        //         last_name:"Crew", 
-        //         school:"Homai",
-        //         date_of_birth:"2007-05-11",
-        //         contact_number: "0228573845",
-        //         email:"thisyocrew@homai.edu", 
-        //     }
-        // ])
     }, [])
     
     const handleSubmit = (e) => {
