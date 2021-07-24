@@ -4,7 +4,6 @@ import Avatar from './avatar';
 import TeacherAvatar from './teacherAvatar';
 import TopLoginSignUp from './topLoginSignUp';
 import { makeStyles } from '@material-ui/core';
-import { Snackbar } from '@material-ui/core/Snackbar';
 import { useState } from 'react';
 
 import '../login-register-componentsCSS/loginForm.css';
@@ -31,8 +30,6 @@ export default function LoginForm() {
 
     const classes = useStyles()
 
-    // const [open, setOpen] = useState(false)
-    // const [message, setMessage] = useState ('')
     const [activeButton, setActiveButton] = useState("b1");
     var changeForm = "";
 
@@ -62,10 +59,7 @@ export default function LoginForm() {
                         <TeacherAvatar />
                         <div className="signUp">
                             <TopLoginSignUp activeButton={activeButton} setActiveButton={setActiveButton}/>
-                            {changeForm}
-                        <div>
-                        {/* <Snackbar anchorOrigin={{vertical: 'bottom', horizontal: 'center'}} autoHideDuration={3000} open={open} onClose={() => setOpen(false)} message={message} /> */}
-                        </div>
+                            {changeForm}       
                         </div>
                     </div>
                 </div>

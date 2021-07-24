@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import axios from "axios";
 import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
+import Snackbar from '@material-ui/core/Snackbar';
 
 import "../login-register-componentsCSS/signUpForm.css";
 
@@ -25,6 +26,8 @@ export default function SignUpForm() {
    
     const classes = useStyles()
 
+    const [open, setOpen] = useState(false)
+    const [message, setMessage] = useState('')
     const [fullName, setFullName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -39,7 +42,7 @@ export default function SignUpForm() {
             confirmPassword: confirmPassword,
         })
         .then(response => {
-            setMessage("Login Successful!");
+            setMessage("Sign Up Successful!");
             setOpen(true);
             console.log(response.status)
             console.log("Sign Up Successful!")
