@@ -43,7 +43,7 @@ const useStyles = makeStyles({
      }
 }); 
 
-export default function InfoCard({selectedStudent}) {
+export default function InfoCard(props) {
     const styles = useStyles();
 
     return (
@@ -55,7 +55,7 @@ export default function InfoCard({selectedStudent}) {
                 variant='h2'
                 align='center' 
                 className={styles.iCardFullName}>
-                    {selectedStudent.first_name} {selectedStudent.last_name}
+                    {props.fName} {props.lName}
                 </Typography>
                 <Grid 
                 container spacing={6} 
@@ -71,11 +71,11 @@ export default function InfoCard({selectedStudent}) {
                     </Grid>                         
                     <Grid item xs={7} >
                         <Typography className={styles.infoR}>
-                            <p>{selectedStudent.school}</p>
-                            <p>{selectedStudent.teacher_id}</p>
-                            <p>{selectedStudent.date_of_birth}</p>
-                            <p>{selectedStudent.contact_number}</p>
-                            <p>{selectedStudent.email}</p>
+                            <p>{props.school}</p>
+                            <p>{props.teacher}</p>
+                            <p>{props.date}</p>
+                            <p>{props.contact}</p>
+                            <p>{props.email}</p>
                         </Typography>
                     </Grid>
                 </Grid>
