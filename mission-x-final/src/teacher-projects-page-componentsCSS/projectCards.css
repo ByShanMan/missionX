@@ -1,0 +1,22 @@
+.imgCard {
+    height: 197px;
+    width: 279px;
+  }
+
+.projectCard h4 {
+  font-family: 'Nunito', sans-serif;
+  color: slategrey;
+  font-size: 28px;
+  text-align: center;
+  /* line-height: 5px; */
+  margin: 0px;
+  padding-bottom: 0px;
+}
+
+.projectCard p {
+    font-family: 'Nunito', sans-serif;
+    color:slategrey;
+    text-align: center;
+    margin: 1px
+  }
+

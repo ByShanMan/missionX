@@ -1,0 +1,22 @@
+
+.projectTitle {
+    padding-top: 3%;
+}
+
+.projectTitle h1 {
+    width: 160px;
+    height: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 38px;
+    color: slategrey;
+    position: relative;
+    left: 12.5em;
+}
+
+.subtitle {
+    font-size: large;
+    color: slategrey;
+    position: relative;
+    left: 26.6em;
+}

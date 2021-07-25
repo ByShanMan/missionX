@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectsPage from './student-projects-page-components/projectsPage';
+import ProjectsPage from './teacher-projects-page-components/projectsPage';
 
 function App() {
   return (

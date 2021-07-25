@@ -1,0 +1,37 @@
+.filterMenu {
+    width: 180px;
+    height: 0%;
+    font-size: 18px;
+    padding-bottom: 2em;
+    position:relative;
+    left: 225px;
+    top: -1em;
+    
+}
+
+
+.divide {
+       border-top: 2px solid;
+       color: slategrey;
+       margin-top: -20px;
+       margin-bottom: 1px;
+}
+
+
+.selectHeader {
+        text-align: left;
+        font-size: 20px;
+        font-weight: lighter;
+        color: slategrey;
+        line-height: 30px;
+        margin-top: 40px;
+   
+}
+
+.checkName {
+    color: slategrey;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
