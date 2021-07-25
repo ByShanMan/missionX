@@ -1,0 +1,22 @@
+.MakeProject {
+    width:auto;
+    height: auto;
+}
+
+.makeStyles-root-1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #B2E5FA;
+}
+
+.makeScratch img{
+    width: auto;
+    height: 710px;
+}
+
+/* button {
+    width: 400px;
+    height: 400px;
+} */
+
+

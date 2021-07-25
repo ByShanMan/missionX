@@ -1,0 +1,50 @@
+.makeStyles-root-1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #B2E5FA;
+}
+
+.sendPhoto {
+width: auto;
+/* justify-content: center; */
+}
+
+
+#scratch1 {
+height: 250px;
+width: 500px;
+margin-left: 150px;
+margin-top: 50px;
+}
+
+#linedivider {
+height: 680px;
+width: 2px;
+}
+
+#teacher1 {
+    width: 500px;
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+.sendPic {
+    font-size: large;
+    width: 200px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: hotpink; 
+    justify-content: center; 
+}
+
+
+
+.callTeach {
+    font-size: large;
+    width: 200px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: hotpink;
+    justify-content: center;
+}
+
