@@ -7,12 +7,11 @@ import Footer from "../shared-components/footer";
 
 import "../student-profile-viewer-componentsCSS/projectViewer.css";
 
-import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
-import { makeStyles } from "@material-ui/core";
+import { Container } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
+import { Button } from "@material-ui/core";
+import { makeStyles } from "@material-ui/styles";
 
-import { Link } from "react-router-dom";
 import axios from "axios";
 
 const useStyles = makeStyles({
@@ -77,7 +76,7 @@ export default function ProfileViewer() {
                     school={selectedStudent.school}
                     teacher={selectedStudent.teacher_id}
                     contact={selectedStudent.contact_number}
-                    date={selectedStudent.date_of_birth}
+                    date={ new Date (selectedStudent.date_of_birth).toUTCString() }
                     email={selectedStudent.email}
 
                   />

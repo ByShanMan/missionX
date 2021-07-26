@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core';
+import { Car } from '@material-ui/core';
+import { CardConten } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
     root: {
