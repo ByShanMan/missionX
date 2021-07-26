@@ -105,7 +105,7 @@ export default function ProfileViewer() {
           </Button>
         </div>
       </Container>
-      <Footer />
+      <MainFooter />
     </div>
   );
 }

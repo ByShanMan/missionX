@@ -3,9 +3,9 @@ import React from "react";
 import Avatar from "@material-ui/core/Avatar";
 import Container from "@material-ui/core/Container";
 
-import "../shared-componentsCSS/header.css";
+import "../shared-componentsCSS/LoggedIn-Header.css";
 
-export default function Header() {
+export default function LoggedInHeader() {
   return (
     <div className="header">
       <Container maxWidth="xl">
