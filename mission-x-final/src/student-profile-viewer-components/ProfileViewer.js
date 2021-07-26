@@ -28,16 +28,6 @@ const useStyles = makeStyles({
   },
   projectButton: {
     minWidth: "200px",
-    marginRight: "3em",
-    borderRadius: "10px",
-
-    fontSize: "16px",
-    fontWeight: "700",
-    color: "white",
-    background: "rgb(229,171,44)",
-  },
-  dashButton: {
-    minWidth: "200px",
     borderRadius: "10px",
 
     fontSize: "16px",
@@ -97,13 +87,8 @@ export default function ProfileViewer() {
           </Grid>
         </Grid>
         <div className={styles.navButtons}>
-          <Link>
-            <Button variant="contained" className={styles.projectButton}>
-              back to projects
-            </Button>
-          </Link>
-          <Button variant="contained" className={styles.dashButton}>
-            back to dashboard
+          <Button variant="contained" className={styles.projectButton}>
+            back to projects
           </Button>
         </div>
       </Container>
