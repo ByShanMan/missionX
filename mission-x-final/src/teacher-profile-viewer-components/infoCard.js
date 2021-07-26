@@ -63,7 +63,7 @@ export default function InfoCard(props) {
                     <Grid item sm={5}>
                         <Typography className={styles.infoL}>
                             <p>School</p>
-                            <p>Teacher</p>
+                            <p>Courses Purchased</p>
                             <p>Date of Birth</p>
                             <p>Contact No</p>
                             <p>Email Address</p>
@@ -72,7 +72,7 @@ export default function InfoCard(props) {
                     <Grid item xs={7} >
                         <Typography className={styles.infoR}>
                             <p>{props.school}</p>
-                            <p>{props.teacher}</p>
+                            <p>{props.courses}</p>
                             <p>{props.date}</p>
                             <p>{props.contact}</p>
                             <p>{props.email}</p>

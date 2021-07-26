@@ -5,7 +5,7 @@ import AvatarCard from "./avatarCard";
 import InfoCard from "./infoCard";
 import Footer from "../shared-components/footer";
 
-import "../student-profile-viewer-componentsCSS/projectViewer.css";
+import "../teacher-profile-viewer-componentsCSS/projectViewer.css";
 
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
@@ -49,7 +49,7 @@ const useStyles = makeStyles({
 
 export default function ProfileViewer() {
   const styles = useStyles();
-  const [selectedStudents, setSelectedStudents] = useState([]);
+  const [selectedTeachers, setSelectedTeachers] = useState([]);
 
   console.log(window.location.search);
 
@@ -58,7 +58,7 @@ export default function ProfileViewer() {
       .get("http://localhost:4000/profile-viewer/" + window.location.search)
       .then((response) => {
         console.log(response.data);
-        setSelectedStudents(response.data);
+        setSelectedTeachers(response.data);
       })
       .catch((err) => console.log(err));
   }, []);
@@ -69,27 +69,25 @@ export default function ProfileViewer() {
       <Container maxWidth="xl" className={styles.root}>
         <Grid container spacing={12} className={styles.mainGrid}>
           <Grid item xs={4}>
-            {selectedStudents.map(function (selectedStudent, index) {
+            {selectedTeachers.map(function (selectedTeacher, index) {
               return (
                 <div key={index}>
-                  <AvatarCard avatarPicture={selectedStudent.profile_pic} />
+                  <AvatarCard avatarPicture={selectedTeacher.profile_pic} />
                 </div>
               );
             })}
           </Grid>
           <Grid item sm={8}>
-            {selectedStudents.map(function (selectedStudent, index) {
+            {selectedTeachers.map(function (selectedTeacher, index) {
               return (
                 <div key={index}>
                   <InfoCard
-                    fName={selectedStudent.first_name}
-                    lName={selectedStudent.last_name}
-                    school={selectedStudent.school}
-                    teacher={selectedStudent.teacher_id}
-                    contact={selectedStudent.contact_number}
-                    date={selectedStudent.date_of_birth}
-                    email={selectedStudent.email}
-
+                    fName={selectedTeacher.first_name}
+                    lName={selectedTeacher.last_name}
+                    courses={selectedTeacher.courses_purchased}
+                    contact={selectedTeacher.contact_number}
+                    date={selectedTeacher.date_of_birth}
+                    email={selectedTeacher.email}
                   />
                 </div>
               );
