@@ -68,27 +68,27 @@ export default function ProfileViewer() {
       <Header />
       <Container maxWidth="xl" className={styles.root}>
         <Grid container spacing={12} className={styles.mainGrid}>
-          <Grid item xs={4}>(
-            {selectedStudents.map(function (e, index) {
+          <Grid item xs={4}>
+            {selectedStudents.map(function (selectedStudent, index) {
               return (
                 <div key={index}>
-                  <AvatarCard avatarPicture={e.profile_pic} />
+                  <AvatarCard avatarPicture={selectedStudent.profile_pic} />
                 </div>
               );
-            })})
+            })}
           </Grid>
           <Grid item sm={8}>
-            {selectedStudents.map(function (e, index) {
+            {selectedStudents.map(function (selectedStudent, index) {
               return (
                 <div key={index}>
                   <InfoCard
-                    fName={e.first_name}
-                    lName={e.last_name}
-                    school={e.school}
-                    teacher={e.teacher_id}
-                    contact={e.contact_number}
-                    date={e.date_of_birth}
-                    email={e.email}
+                    fName={selectedStudent.first_name}
+                    lName={selectedStudent.last_name}
+                    school={selectedStudent.school}
+                    teacher={selectedStudent.teacher_id}
+                    contact={selectedStudent.contact_number}
+                    date={selectedStudent.date_of_birth}
+                    email={selectedStudent.email}
 
                   />
                 </div>
