@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Avatar from '@material-ui/core/Avatar';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
+import { Avatar } from '@material-ui/core';
+import { Card } from '@material-ui/core';
+import { CardContent } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles= makeStyles({
@@ -40,11 +40,7 @@ const useStyles= makeStyles({
     }
 });
 
-<<<<<<< HEAD:mission-x-final/src/student-profile-viewer-components/avatarCard.js
-export default function AvatarCard({selectedTeacher}) {
-=======
 export default function AvatarCard(props) {
->>>>>>> d59254951f30e63a67994c40d2ec92f2ade0024d:mission-x-final/src/teacher-profile-viewer-components/avatarCard.js
     const styles = useStyles();
 
     return (
@@ -54,11 +50,7 @@ export default function AvatarCard(props) {
             >
                 <Avatar 
                 className={styles.avPic}>
-<<<<<<< HEAD:mission-x-final/src/student-profile-viewer-components/avatarCard.js
-                    <img src={selectedTeacher.imgURL} alt="mainAvatar"/>
-=======
                     <img src={props.avatarPicture} alt="mainAvatar"/>
->>>>>>> d59254951f30e63a67994c40d2ec92f2ade0024d:mission-x-final/src/teacher-profile-viewer-components/avatarCard.js
                 </Avatar>
                 <div 
                 className="avCardButtons">
@@ -68,7 +60,7 @@ export default function AvatarCard(props) {
                     color = "primary"
                     className={styles.avCardButtons}
                     >
-                    EDIT PROFILE
+                    edit profile
                     </Button>
                     <Button 
                     variant ='outlined'
@@ -76,7 +68,15 @@ export default function AvatarCard(props) {
                     color = "primary"
                     className={styles.avCardButtons}
                     >
-                    CHANGE PHOTO
+                    change photo
+                    </Button>
+                    <Button 
+                    variant ='outlined'
+                    size = "large"
+                    color = "primary"
+                    className={styles.avCardButtons}
+                    >
+                    settings
                     </Button>
                 </div>
             </CardContent>

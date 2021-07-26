@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 
-import Header from "../shared-components/header";
-import AvatarCard from "./avatarCard";
-import InfoCard from "./infoCard";
-import Footer from "../shared-components/footer";
+import LoggedInHeader from "../shared-components/LoggedIn-Header";
+import AvatarCard from "./AvatarCard";
+import InfoCard from "./InfoCard";
+import MainFooter from "../shared-components/MainFooter";
 
 import "../teacher-profile-viewer-componentsCSS/projectViewer.css";
 
-import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
+import { Container }from "@material-ui/core";
+import { Grid } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core";
 
 import { Link } from "react-router-dom";
@@ -65,7 +65,7 @@ export default function ProfileViewer() {
 
   return (
     <div className="projectView">
-      <Header />
+      <LoggedInHeader />
       <Container maxWidth="xl" className={styles.root}>
         <Grid container spacing={12} className={styles.mainGrid}>
           <Grid item xs={4}>
@@ -86,7 +86,7 @@ export default function ProfileViewer() {
                     lName={selectedTeacher.last_name}
                     courses={selectedTeacher.courses_purchased}
                     contact={selectedTeacher.contact_number}
-                    date={selectedTeacher.date_of_birth}
+                    date={ new Date (selectedTeacher.date_of_birth).toUTCString() }
                     email={selectedTeacher.email}
                   />
                 </div>

@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
+import { Card } from '@material-ui/core';
+import { CardContent } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
@@ -52,7 +52,6 @@ export default function InfoCard(props) {
             <CardContent  
             className={styles.infoCard}>
                 <Typography 
-                variant='h2'
                 align='center' 
                 className={styles.iCardFullName}>
                     {props.fName} {props.lName}
@@ -73,7 +72,7 @@ export default function InfoCard(props) {
                         <Typography className={styles.infoR}>
                             <p>{props.school}</p>
                             <p>{props.courses}</p>
-                            <p>{props.date}</p>
+                            <p>{ ( new Date (props.date).toUTCString) }</p>
                             <p>{props.contact}</p>
                             <p>{props.email}</p>
                         </Typography>
