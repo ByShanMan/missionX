@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../componentsCSS/footer.css'
+import '../shared-componentsCSS/footer.css'
 
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Typography';

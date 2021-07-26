@@ -1,30 +1,21 @@
-import React, {useState} from "react";
+import React from "react";
 
-import ProfileViewer from "./components/ProfileViewer";
-import StudentProfiles from './PV-students/StudentProfiles';
+import ProfileViewer from "./student-profile-viewer-components/ProfileViewer";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
-
-  const [selectedUser, setSelectedUser] = useState({})
-
   return (
-          <>
-            <Router>
-                <Switch>
-                    <Route path="/profile-view">
-                        <ProfileViewer selectedUser={selectedUser} />
-                    </Route>
-                    <Route path="/student-profile">
-                        <StudentProfiles setSelectedUser={setSelectedUser} />
-                    </Route>
-                </Switch>
-            </Router>
-          </>
-        );
+    <>
+      <Router>
+        <Switch>
+          <Route
+            path="/profile-viewer/"
+            exact
+            component={ProfileViewer}
+          />
+        </Switch>
+      </Router>
+    </>
+  );
 }

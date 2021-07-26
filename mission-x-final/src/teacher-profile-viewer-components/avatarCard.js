@@ -40,7 +40,11 @@ const useStyles= makeStyles({
     }
 });
 
+<<<<<<< HEAD:mission-x-final/src/student-profile-viewer-components/avatarCard.js
 export default function AvatarCard({selectedTeacher}) {
+=======
+export default function AvatarCard(props) {
+>>>>>>> d59254951f30e63a67994c40d2ec92f2ade0024d:mission-x-final/src/teacher-profile-viewer-components/avatarCard.js
     const styles = useStyles();
 
     return (
@@ -50,7 +54,11 @@ export default function AvatarCard({selectedTeacher}) {
             >
                 <Avatar 
                 className={styles.avPic}>
+<<<<<<< HEAD:mission-x-final/src/student-profile-viewer-components/avatarCard.js
                     <img src={selectedTeacher.imgURL} alt="mainAvatar"/>
+=======
+                    <img src={props.avatarPicture} alt="mainAvatar"/>
+>>>>>>> d59254951f30e63a67994c40d2ec92f2ade0024d:mission-x-final/src/teacher-profile-viewer-components/avatarCard.js
                 </Avatar>
                 <div 
                 className="avCardButtons">
@@ -69,15 +77,6 @@ export default function AvatarCard({selectedTeacher}) {
                     className={styles.avCardButtons}
                     >
                     CHANGE PHOTO
-                    </Button>                 
-                    <Button
-                    variant ='outlined'
-                    size = "large"
-                    color = "primary" 
-                    className={styles.avCardButtons}
-                    
-                    >
-                    SETTINGS
                     </Button>
                 </div>
             </CardContent>
