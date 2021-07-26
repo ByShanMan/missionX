@@ -2,7 +2,7 @@ const studentProjects = [
     {
     id:"1",
     title: "Introduction",
-    src:"./projectsPageImages/Project1.png",
+    src:"./mission-x-images/projects-images/project1.png",
     subscription:"Free",
     activityType:"Animation",
     difficultyLevel:"BEGINNER",

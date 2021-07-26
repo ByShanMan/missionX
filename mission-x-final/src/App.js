@@ -4,7 +4,9 @@ import ProjectsPage from './teacher-projects-page-components/projectsPage';
 function App() {
   return (
     <div className="App">
+
       <ProjectsPage />
+      
   </div>
     
   );
