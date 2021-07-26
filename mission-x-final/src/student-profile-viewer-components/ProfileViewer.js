@@ -68,14 +68,14 @@ export default function ProfileViewer() {
       <Header />
       <Container maxWidth="xl" className={styles.root}>
         <Grid container spacing={12} className={styles.mainGrid}>
-          <Grid item xs={4}>
+          <Grid item xs={4}>(
             {selectedStudents.map(function (e, index) {
               return (
                 <div key={index}>
                   <AvatarCard avatarPicture={e.profile_pic} />
                 </div>
               );
-            })}
+            })})
           </Grid>
           <Grid item sm={8}>
             {selectedStudents.map(function (e, index) {
