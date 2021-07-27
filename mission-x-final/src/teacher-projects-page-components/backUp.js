@@ -47,7 +47,7 @@ function BackUp() {
 
   return (
     <div className={styles.root}>
-      <Button className={styles.button} size="small" variant="contained">
+      <Button className={styles.button} size="small" variant="contained" href="projectTitle">
         BACK TO TOP
       </Button>
       <div>
