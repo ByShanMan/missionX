@@ -30,7 +30,7 @@ function PopUpLogin(props) {
   );
 }
 
-export default function Header() {
+export default function HomepageHeader() {
   const [dialogOpen, setDialogOpen] = useState(false);
   const handleDialogClose = () => {
     setDialogOpen(false);

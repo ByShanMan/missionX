@@ -5,7 +5,7 @@ import AvatarCard from "./AvatarCard";
 import InfoCard from "./InfoCard";
 import MainFooter from "../shared-components/MainFooter";
 
-import "../teacher-profile-viewer-componentsCSS/teacher-projectViewer.css";
+import "../profile-viewer-componentsCSS/ProfileViewer.css";
 
 import { Container } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
@@ -38,7 +38,7 @@ const useStyles = makeStyles({
 
 export default function ProfileViewer() {
   const styles = useStyles();
-  const [selectedTeachers, setSelectedTeachers] = useState([]);
+  const [selectedUsers, setSelectedUsers] = useState([]);
 
   console.log(window.location.search);
 
@@ -47,7 +47,7 @@ export default function ProfileViewer() {
       .get("http://localhost:4000/profile/" + window.location.search)
       .then((response) => {
         console.log(response.data);
-        setSelectedTeachers(response.data);
+        setSelectedUsers(response.data);
       })
       .catch((err) => console.log(err));
   }, []);
@@ -59,27 +59,27 @@ export default function ProfileViewer() {
         
         <Grid container spacing={12} className={styles.mainGrid}>
           <Grid item xs={4}>
-            {selectedTeachers.map(function (selectedTeacher, index) {
+            {selectedUsers.map(function (selectedUser, index) {
               return (
                 <div key={index}>
-                  <AvatarCard avatarPicture={selectedTeacher.profile_pic} />
+                  <AvatarCard avatarPicture={selectedUser.profile_pic} />
                 </div>
               );
             })}
           </Grid>
 
           <Grid item sm={8}>
-            {selectedTeachers.map(function (selectedTeacher, index) {
+            {selectedUsers.map(function (selectedUser, index) {
               return (
                 <div key={index}>
                   <InfoCard
-                    fName={selectedStudent.first_name}
-                    lName={selectedStudent.last_name}
-                    school={selectedStudent.school}
-                    teacher={selectedStudent.teacher_id}
-                    contact={selectedStudent.contact_number}
-                    date={ new Date (selectedStudent.date_of_birth).toDateString() }
-                    email={selectedStudent.email}
+                    fName={selectedUser.first_name}
+                    lName={selectedUser.last_name}
+                    school={selectedUser.school}
+                    teacher={selectedUser.teacher_id}
+                    contact={selectedUser.contact_number}
+                    date={ new Date (selectedUser.date_of_birth).toDateString() }
+                    email={selectedUser.email}
 
                   />
                 </div>

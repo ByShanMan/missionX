@@ -1,23 +1,23 @@
 import React from "react";
-import Header from "../shared-components/HomepageHeader.js";
+import HomepageHeader from "../shared-components/HomepageHeader.js";
 import PromoBanner from "./promoBanner";
 import WeOffer from "./weOffer";
 import DigitalSkills from "./digitalSkills";
 import InfoBlock from "./infoBlock";
 import BottomPromo from "./bottomPromo";
-import Footer from "../shared-components/Footer.js"
+import MainFooter from "../shared-components/MainFooter.js"
 
 
 export default function Homepage() {
   return (
     <div className="homepageMain">
-      <Header />
+      <HomepageHeader />
       <PromoBanner />
       <WeOffer />
       <DigitalSkills />
       <InfoBlock />
       <BottomPromo />
-      <Footer /> 
+      <MainFooter /> 
     </div>
   );
 }

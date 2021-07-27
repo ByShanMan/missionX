@@ -1,7 +1,7 @@
 import React from "react";
 
 import Homepage from "./homepage-components/homepage"
-import ProfileViewer from "./teacher-profile-viewer-components/teacher-ProfileViewer";
+import ProfileViewer from "./profile-viewer-components/ProfileViewer";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -16,12 +16,12 @@ export default function App() {
           component={Homepage}
           />
           <Route
-            path="/teacher-profile/"
+            path="/profile/"
             exact
             component={ProfileViewer}
           />
           <Route
-            path="/student-profile/"
+            path="/profile/"
             exact
             component={ProfileViewer}
           />

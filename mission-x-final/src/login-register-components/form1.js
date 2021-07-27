@@ -6,7 +6,7 @@ import { makeStyles } from "@material-ui/styles";
 
 import "../login-register-componentsCSS/loginForm.css";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   root: {
     fontWeight: "900",
     paddingLeft: "55px",
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     margin: "auto",
   },
-}));
+});
 
 function Form1() {
   const classes = useStyles();
