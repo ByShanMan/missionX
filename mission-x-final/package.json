@@ -4,10 +4,6 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.1",
-<<<<<<< HEAD
-    "@material-ui/styles": "^4.11.4",
-=======
->>>>>>> a4393f5542918672dfda5a6b53e8b8f3eace5f0b
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
