@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../shared-components/homepage-Header.js";
+import Header from "../shared-components/HomepageHeader.js";
 import PromoBanner from "./promoBanner";
 import WeOffer from "./weOffer";
 import DigitalSkills from "./digitalSkills";

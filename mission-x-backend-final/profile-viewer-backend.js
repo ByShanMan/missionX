@@ -20,8 +20,8 @@ db.connect((err) => {
     console.log("Database Connection Complete")
 })
 
-app.get('/teacher-profile/', (req, res) => {
-    db.query("SELECT first_name, last_name, school, course_purchased, date_of_birth, contact_number, email, profile_pic FROM users_table WHERE user_id = ?", [req.query.user_id], (err, result) => {
+app.get('/profile/', (req, res) => {
+    db.query("SELECT * FROM users_table WHERE user_id = " + [req.query.user_id], (err, result) => {
         if (err) console.log(err)
         console.log(result)
         res.send(result)
