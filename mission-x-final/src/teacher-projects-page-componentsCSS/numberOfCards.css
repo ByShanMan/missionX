@@ -1,9 +1,8 @@
 .showCards {
+    border: solid 1px;
+    
     text-align: right;
-    margin-right: 20px;
-    position:relative;
-    bottom: 70px;
-    right: 13em;
+ 
 }
 
 .showText {

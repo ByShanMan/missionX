@@ -1,9 +1,5 @@
-.buttons {
-    text-align: center;
-    margin-right: 14em;
-    padding-bottom: 0em;
-    position: relative;
-    top: 3em;
-    right: 5em;
-    
+.cardLevelButtons {
+    display: flex;
+    margin-left: 470px;
+    margin-top: 40px;
 }

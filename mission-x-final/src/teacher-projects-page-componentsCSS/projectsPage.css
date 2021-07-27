@@ -1,4 +1,5 @@
 .mainContainer {
+    border: solid 1px;
     max-width: 1700px;
     max-height: 2700px; 
     margin-left: auto;
@@ -14,11 +15,14 @@
 
 
 .projectCardArea {
+    border: solid 1px;
     width: 1000px;
-    position:relative;
-    left: 480px;
-    bottom: 50px
+    display:flex;
+    margin-top: 70px;
+    margin-left: 280px;
+    margin-bottom: 50px;
 }
 
-
-
+.main2 {
+    display:flex;
+}
