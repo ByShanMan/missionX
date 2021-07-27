@@ -1,11 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 
-import Avatar from "@material-ui/core/Avatar";
+import LoginForm from "../login-register-components/loginForm";
+
 import Container from "@material-ui/core/Container";
+import Dialog from "@material-ui/core/Dialog";
+import { makeStyles } from "@material-ui/core";
 
 import "../shared-componentsCSS/homepage-header.css";
 
+const useStyles = makeStyles({
+  paper: {
+    flexDirection: "row",
+    maxWidth: "800px",
+  },
+});
+
+//set uo dialog
+function PopUpLogin(props) {
+  const styles = useStyles();
+
+  return (
+    <Dialog
+      open={props.openDialog}
+      onClose={props.closeDialog}
+      classes={{ paper: styles.paper }}
+    >
+      <LoginForm handleDialogClose = {props.closeDialog} />
+    </Dialog>
+  );
+}
+
 export default function Header() {
+  const [dialogOpen, setDialogOpen] = useState(false);
+  const handleDialogClose = () => {
+    setDialogOpen(false);
+  };
+
   return (
     <div className="header">
       <Container maxWidth="xl">
@@ -46,10 +76,14 @@ export default function Header() {
                   REGISTER
                 </p>
                 <p>|</p>
-                <p className="login" href="#">
+                <p className="login" onClick={() => setDialogOpen(true)}>
                   LOGIN
                 </p>
               </div>
+              <PopUpLogin
+                openDialog={dialogOpen}
+                closeDialog={handleDialogClose}
+              />
             </div>
           </div>
         </div>
