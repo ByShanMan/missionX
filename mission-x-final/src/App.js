@@ -1,6 +1,6 @@
 import React from "react";
 
-import ProfileViewer from "./teacher-profile-viewer-components/ProfileViewer";
+import ProfileViewer from "./teacher-profile-viewer-components/teacher-ProfileViewer";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 

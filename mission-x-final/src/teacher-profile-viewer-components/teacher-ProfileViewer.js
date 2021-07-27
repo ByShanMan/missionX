@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from "react";
 
 import LoggedInHeader from "../shared-components/LoggedInHeader";
-import AvatarCard from "./AvatarCard";
-import InfoCard from "./InfoCard";
+import AvatarCard from "./teacher-AvatarCard";
+import InfoCard from "./teacher-InfoCard";
 import MainFooter from "../shared-components/MainFooter";
 
-import "../teacher-profile-viewer-componentsCSS/projectViewer.css";
+import "../teacher-profile-viewer-componentsCSS/teacher-projectViewer.css";
 
-import { Container }from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
 import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core";
 
-import { Link } from "react-router-dom";
 import axios from "axios";
 
 const useStyles = makeStyles({
@@ -55,7 +54,7 @@ export default function ProfileViewer() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/teacher-profile2/" + window.location.search)
+      .get("http://localhost:4000/teacher-profile/" + window.location.search)
       .then((response) => {
         console.log(response.data);
         setSelectedTeachers(response.data);
@@ -67,6 +66,7 @@ export default function ProfileViewer() {
     <div className="projectView">
       <LoggedInHeader />
       <Container maxWidth="xl" className={styles.root}>
+        
         <Grid container spacing={12} className={styles.mainGrid}>
           <Grid item xs={4}>
             {selectedTeachers.map(function (selectedTeacher, index) {
@@ -88,20 +88,21 @@ export default function ProfileViewer() {
                     school={selectedTeacher.school}
                     courses={selectedTeacher.course_purchased}
                     contact={selectedTeacher.contact_number}
-                    date={ new Date (selectedTeacher.date_of_birth).toDateString() }
                     email={selectedTeacher.email}
+                    date={new Date(
+                      selectedTeacher.date_of_birth
+                    ).toDateString()}
                   />
                 </div>
               );
             })}
           </Grid>
         </Grid>
+
         <div className={styles.navButtons}>
-          <Link>
-            <Button variant="contained" className={styles.projectButton}>
-              back to projects
-            </Button>
-          </Link>
+          <Button variant="contained" className={styles.projectButton}>
+            back to projects
+          </Button>
           <Button variant="contained" className={styles.dashButton}>
             back to dashboard
           </Button>
