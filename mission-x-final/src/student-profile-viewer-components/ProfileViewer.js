@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-import Header from "../shared-components/header";
-import AvatarCard from "./avatarCard";
-import InfoCard from "./infoCard";
-import Footer from "../shared-components/footer";
+import LoggedInHeader from "../shared-components/LoggedInHeader";
+import AvatarCard from "./AvatarCard";
+import InfoCard from "./InfoCard";
+import MainFooter from "../shared-components/MainFooter";
 
 import "../student-profile-viewer-componentsCSS/projectViewer.css";
 
@@ -22,7 +22,7 @@ const useStyles = makeStyles({
     paddingTop: "7%",
   },
   navButtons: {
-    marginLeft: "60%",
+    marginLeft: "70%",
     height: "50px",
   },
   projectButton: {
@@ -54,7 +54,7 @@ export default function ProfileViewer() {
 
   return (
     <div className="projectView">
-      <Header />
+      <LoggedInHeader />
       <Container maxWidth="xl" className={styles.root}>
         <Grid container spacing={12} className={styles.mainGrid}>
           <Grid item xs={4}>
@@ -76,7 +76,7 @@ export default function ProfileViewer() {
                     school={selectedStudent.school}
                     teacher={selectedStudent.teacher_id}
                     contact={selectedStudent.contact_number}
-                    date={ new Date (selectedStudent.date_of_birth).toUTCString() }
+                    date={ new Date (selectedStudent.date_of_birth).toDateString() }
                     email={selectedStudent.email}
 
                   />
@@ -91,7 +91,7 @@ export default function ProfileViewer() {
           </Button>
         </div>
       </Container>
-      <Footer />
+      <MainFooter />
     </div>
   );
 }

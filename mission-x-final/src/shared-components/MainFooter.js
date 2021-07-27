@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../shared-componentsCSS/footer.css'
+import '../shared-componentsCSS/MainFooter.css'
 
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Typography';
@@ -38,7 +38,7 @@ const useStyles = makeStyles({
 });
 
 
-export default function Footer() {
+export default function MainFooter() {
     const styles = useStyles();
 
     return (

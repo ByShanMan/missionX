@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState , useEffect } from "react";
 
-import Container from "@material-ui/core/Container";
+import { Container } from "@material-ui/core";
 
-import "../shared-componentsCSS/header.css";
+import "../shared-componentsCSS/LoggedInHeader.css";
+import axios from 'axios';
 
-export default function Header() {
-  [loggedInUsers, setLoggedInUsers] = useState([]);
+
+export default function LoggedInHeader() {
+  
+ const [loggedInUsers, setLoggedInUsers] = useState([]);
 
   useEffect(() => {
     axios
