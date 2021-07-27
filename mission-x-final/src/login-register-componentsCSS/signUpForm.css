@@ -1,0 +1,52 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+.fullName {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    border-color: lightgrey;
+    border-radius: 7px;
+    border-block-width: 1px;
+    margin-top: 280px;
+    padding: 5px;
+    width: 240px;
+    
+}
+
+.emailAddress {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    border-color: lightgrey;
+    border-radius: 7px;
+    border-block-width: 1px;
+    padding: 5px;
+    width: 240px;
+}
+
+.newPassword {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    border-color: lightgrey;
+    border-radius: 7px;
+    border-block-width: 1px;
+    padding: 5px;
+    width: 240px;
+
+}
+
+.confirmPassword {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    border-color: lightgrey;
+    border-radius: 7px;
+    border-block-width: 1px;
+    padding: 5px;
+    width: 240px;
+    margin-bottom: 30px;
+}
+
+.signUpInput {
+    justify-content: center;
+    margin: auto;
+}

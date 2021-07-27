@@ -1,0 +1,48 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+.loginLinks {
+    position:fixed;
+    display: flex;
+    justify-content: center; 
+    margin-top: 30px;
+    margin-bottom: 100px;
+   
+}
+
+.loginLink3 {
+    font-weight:800;
+    font-size: x-large;
+    color:#767676;
+    text-decoration: none;
+    padding-right: 65px;
+}
+
+.signupLink3 {
+    font-weight:800;
+    font-size: x-large;
+    color:#767676;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+.loginLink3:hover {
+    text-decoration: underline #00c3ff;
+    text-decoration-thickness: 5px;
+}
+
+.signupLink3:hover {
+    text-decoration: underline #F4499B;
+    text-decoration-thickness: 5px;
+}
+
+.loginActive {
+    text-decoration: underline #00c3ff;
+    text-decoration-thickness: 5px;
+}
+
+.signupActive {
+    text-decoration: underline #F4499B;
+    text-decoration-thickness: 5px;
+}
