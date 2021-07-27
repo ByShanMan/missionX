@@ -55,7 +55,6 @@ export default function SignUpForm() {
         })
     }
 
-    // const name = fullName.split(' ');
     const first_name = fullName.split(' ').slice(0, -1).join(' ');
     console.log(first_name);
     const last_name = fullName.split(' ').slice(1).join(' ');
