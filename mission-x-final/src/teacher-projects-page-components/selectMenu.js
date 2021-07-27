@@ -8,7 +8,7 @@ export default function SelectMenu() {
 
                   <h4 className="selectHeader">SUBSCRIPTION</h4>
                         <hr className="divide"></hr>
-                              <input type="checkbox" checked="checked"></input>
+                              <input type="checkbox"></input>
                                     <label className="checkName">Free</label>
                         <br></br>
                               <input type="checkbox"></input>
@@ -17,7 +17,7 @@ export default function SelectMenu() {
                   
                   <h4 className="selectHeader">ACTIVITY TYPE</h4>
                         <hr className="divide"></hr>
-                              <input type="checkbox" checked="checked"></input>
+                              <input type="checkbox"></input>
                                     <label className="checkName">Animation</label>
                         <br></br>
                               <input type="checkbox"></input>
@@ -33,7 +33,7 @@ export default function SelectMenu() {
                   
                   <h4 className="selectHeader">YEAR LEVEL</h4>
                         <hr className="divide"></hr>
-                              <input type="checkbox" checked="checked"></input>
+                              <input type="checkbox"></input>
                                     <label className="checkName">1-4</label>
                         <br></br>
                               <input type="checkbox"></input>
@@ -49,7 +49,7 @@ export default function SelectMenu() {
                   
                   <h4 className="selectHeader">SUBJECT MATTER</h4>
                         <hr className="divide"></hr>
-                              <input type="checkbox" checked="checked"></input>
+                              <input type="checkbox"></input>
                                     <label className="checkName">Computer Science</label>
                         <br></br>
                               <input type="checkbox"></input>
