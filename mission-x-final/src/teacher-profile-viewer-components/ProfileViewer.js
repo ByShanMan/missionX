@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import LoggedInHeader from "../shared-components/LoggedIn-Header";
+import LoggedInHeader from "../shared-components/LoggedInHeader";
 import AvatarCard from "./AvatarCard";
 import InfoCard from "./InfoCard";
 import MainFooter from "../shared-components/MainFooter";
@@ -55,7 +55,7 @@ export default function ProfileViewer() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/profile-viewer/" + window.location.search)
+      .get("http://localhost:4000/teacher-profile2/" + window.location.search)
       .then((response) => {
         console.log(response.data);
         setSelectedTeachers(response.data);
@@ -77,6 +77,7 @@ export default function ProfileViewer() {
               );
             })}
           </Grid>
+
           <Grid item sm={8}>
             {selectedTeachers.map(function (selectedTeacher, index) {
               return (
@@ -84,9 +85,10 @@ export default function ProfileViewer() {
                   <InfoCard
                     fName={selectedTeacher.first_name}
                     lName={selectedTeacher.last_name}
-                    courses={selectedTeacher.courses_purchased}
+                    school={selectedTeacher.school}
+                    courses={selectedTeacher.course_purchased}
                     contact={selectedTeacher.contact_number}
-                    date={ new Date (selectedTeacher.date_of_birth).toUTCString() }
+                    date={ new Date (selectedTeacher.date_of_birth).toDateString() }
                     email={selectedTeacher.email}
                   />
                 </div>

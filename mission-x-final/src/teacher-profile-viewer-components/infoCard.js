@@ -21,6 +21,7 @@ const useStyles = makeStyles({
     iCardFullName: {
         color: 'rgb(112,112,112)',
         fontWeight: "bold",
+        fontSize: "60px",
         marginLeft: 'auto',
         marginTop: "50px",
     },
@@ -72,7 +73,7 @@ export default function InfoCard(props) {
                         <Typography className={styles.infoR}>
                             <p>{props.school}</p>
                             <p>{props.courses}</p>
-                            <p>{ ( new Date (props.date).toUTCString) }</p>
+                            <p>{props.date}</p>
                             <p>{props.contact}</p>
                             <p>{props.email}</p>
                         </Typography>
