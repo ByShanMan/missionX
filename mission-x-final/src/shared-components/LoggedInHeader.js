@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Avatar } from "@material-ui/core";
 import { Container } from "@material-ui/core";
 
-import "../shared-componentsCSS/LoggedIn-Header.css";
+import "../shared-componentsCSS/LoggedInHeader.css";
 import axios from "axios";
 
 export default function LoggedInHeader() {
