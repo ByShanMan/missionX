@@ -1,6 +1,6 @@
 import React from 'react'
 
-import "../teacher-projects-page-componentsCSS/selectMenu.css"
+import "../projects-page-componentsCSS/selectMenu.css"
 
 export default function SelectMenu() {
       return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@material-ui/core";
 
-import "../teacher-projects-page-componentsCSS/cardDifficulty.css";
+import "../projects-page-componentsCSS/cardDifficulty.css";
 
 function CardDifficulty() {
   return (

@@ -1,17 +1,18 @@
 import React from "react";
-import Header from "../shared-components/header";
+import LoggedInHeader from "../shared-components/LoggedInHeader";
 import ProjectTitle from "./projectTitle";
 import CardDifficulty from "./cardDifficulty";
 import NumberOfCards from "./numberOfCards";
 import ProjectCards from "./projectCards";
 import SelectMenu from "./selectMenu";
 import BackUp from "./backUp";
+import MainFooter from "../shared-components/MainFooter";
+
 import Grid from "@material-ui/core/Grid";
-import Footer from "../shared-components/footer";
 
 import studentProjects from "./studentProjectsArr";
 
-import "../teacher-projects-page-componentsCSS/projectsPage.css";
+import "../projects-page-componentsCSS/projectsPage.css";
 
 function createProject(project) {
   return (
@@ -30,7 +31,7 @@ function createProject(project) {
 export default function ProjectsPage() {
   return (
     <div className="mainContainer">
-      <Header />
+      <LoggedInHeader />
       <ProjectTitle />
       <CardDifficulty />
       <div className="main2">
@@ -49,7 +50,7 @@ export default function ProjectsPage() {
       </div>
 
       <BackUp />
-      <Footer />
+      <MainFooter />
     </div>
   );
 }
