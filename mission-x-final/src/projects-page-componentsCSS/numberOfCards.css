@@ -1,0 +1,13 @@
+.showCards {
+    border: solid 1px;
+    
+    text-align: right;
+ 
+}
+
+.showText {
+    position: relative;
+    top: 23px;
+    right:210px;
+}
+

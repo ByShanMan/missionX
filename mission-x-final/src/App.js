@@ -1,5 +1,6 @@
-import React from "react";
+import React from 'react'
 
+import ProjectsPage from './teacher-projects-page-components/projectsPage';
 import Homepage from "./homepage-components/homepage"
 import ProfileViewer from "./profile-viewer-components/ProfileViewer";
 
@@ -21,12 +22,14 @@ export default function App() {
             component={ProfileViewer}
           />
           <Route
-            path="/profile/"
-            exact
-            component={ProfileViewer}
+          path="/projects"
+          exact
+          component={ProjectsPage}
           />
         </Switch>
       </Router>
     </>
+      
+    
   );
 }
