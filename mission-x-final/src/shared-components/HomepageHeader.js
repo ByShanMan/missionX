@@ -6,7 +6,7 @@ import Container from "@material-ui/core/Container";
 import Dialog from "@material-ui/core/Dialog";
 import { makeStyles } from "@material-ui/core";
 
-import "../shared-componentsCSS/homepage-header.css";
+import "../shared-componentsCSS/HomepageHeader.css";
 
 const useStyles = makeStyles({
   paper: {
