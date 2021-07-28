@@ -52,11 +52,54 @@ export default function ProfileViewer() {
       .catch((err) => console.log(err));
   }, []);
 
+  if (
+    selectedUsers === "http://localhost:4000/profile/user_id=6" ||
+    "http://localhost:4000/profile/user_id=18"
+  ) {
+    ActiveInfoCard = (
+      <Grid item sm={8}>
+        {selectedUsers.map(function (selectedUser, index) {
+          return (
+            <div key={index}>
+              <InfoCard
+                fName={selectedUser.first_name}
+                lName={selectedUser.last_name}
+                school={selectedUser.school}
+                course={selectedUser.course_purchased}
+                contact={selectedUser.contact_number}
+                date={new Date(selectedUser.date_of_birth).toDateString()}
+                email={selectedUser.email}
+              />
+            </div>
+          );
+        })}
+      </Grid>
+    );
+  } else {
+    ActiveInfoCard = (
+      <Grid item sm={8}>
+        {selectedUsers.map(function (selectedUser, index) {
+          return (
+            <div key={index}>
+              <InfoCard2
+                fName={selectedUser.first_name}
+                lName={selectedUser.last_name}
+                school={selectedUser.school}
+                teacher={selectedUser.teacher_id}
+                contact={selectedUser.contact_number}
+                date={new Date(selectedUser.date_of_birth).toDateString()}
+                email={selectedUser.email}
+              />
+            </div>
+          );
+        })}
+      </Grid>
+    );
+  }
   return (
     <div className="projectView">
       <LoggedInHeader />
       <Container maxWidth="xl" className={styles.root}>
-        
         <Grid container spacing={12} className={styles.mainGrid}>
           <Grid item xs={4}>
             {selectedUsers.map(function (selectedUser, index) {
@@ -67,25 +110,7 @@ export default function ProfileViewer() {
               );
             })}
           </Grid>
-
-          <Grid item sm={8}>
-            {selectedUsers.map(function (selectedUser, index) {
-              return (
-                <div key={index}>
-                  <InfoCard
-                    fName={selectedUser.first_name}
-                    lName={selectedUser.last_name}
-                    school={selectedUser.school}
-                    teacher={selectedUser.teacher_id}
-                    contact={selectedUser.contact_number}
-                    date={ new Date (selectedUser.date_of_birth).toDateString() }
-                    email={selectedUser.email}
-
-                  />
-                </div>
-              );
-            })}
-          </Grid>
+          {ActiveInfoCard}
         </Grid>
 
         <div className={styles.navButtons}>
