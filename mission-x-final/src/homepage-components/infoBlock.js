@@ -9,7 +9,7 @@ const InfoBoxArray = [
   {
     id: 0,
     name: "Learning Pathways",
-    imgURL: "Mission-X-Images/homepageImages/StarLogo.png",
+    imgURL: "mission-x-images/homepage-images/StarLogo.png",
 
     main: "Interlinking Pathways",
     title:
@@ -38,7 +38,7 @@ const InfoBoxArray = [
   {
     id: 1,
     name: "Digital Technology",
-    imgURL: "Mission-X-Images/homepageImages/StarLogo.png",
+    imgURL: "mission-x-images/homepage-images/StarLogo.png",
 
     main: "Expands Knowledge Base",
     title:
@@ -67,7 +67,7 @@ const InfoBoxArray = [
   {
     id: 2,
     name: "Key Competencies",
-    imgURL: "Mission-X-Images/homepageImages/StarLogo.png",
+    imgURL: "mission-x-images/homepage-images/StarLogo.png",
 
     main: "Enhance Key Competencies",
     title:
@@ -96,7 +96,7 @@ const InfoBoxArray = [
   {
     id: 3,
     name: "IR4.0",
-    imgURL: "Mission-X-Images/homepageImages/StarLogo.png",
+    imgURL: "mission-x-images/homepage-images/StarLogo.png",
 
     main: "IR4.0",
     title:
