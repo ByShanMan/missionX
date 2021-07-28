@@ -40,7 +40,7 @@ export default function PromoBanner() {
       <div className="promoPic">
         <img
           className="babyImage"
-          src="Mission-X-Images/homepageImages/babyBanner.png"
+          src="mission-x-images/homepage-images/babyBanner.png"
           alt=""
         />
       </div>

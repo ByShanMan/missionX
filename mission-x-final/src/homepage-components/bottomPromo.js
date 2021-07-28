@@ -71,7 +71,7 @@ export default function BottomPromo() {
         <Grid item xs={6}>
           <img
             className={styles.leftImage}
-            src="Mission-X-Images/homepageImages/bottomPromoCard.png"
+            src="mission-x-images/homepage-images/bottomPromoCard.png"
             alt=""
           />
         </Grid>

@@ -11,8 +11,8 @@ import "../homepage-componentsCSS/weOffer.css";
 const useStyles = makeStyles({
   root: {
     justifyContent: "center",
-  }
-})
+  },
+});
 
 const weOfferArray = [
   {
@@ -68,35 +68,39 @@ export default function WeOffer() {
   };
 
   const handleBigClick = (i) => {
-    setActiveButton('b' + i);
-  }
+    setActiveButton("b" + i);
+  };
 
   if (activeButton === "b1") {
     laptopScreen = (
       <img
         className="laptopScreen"
-        src="Mission-X-Images/homepageImages/animationScreen.png"
+        src="mission-x-images/homepage-images/animationScreen.png"
+        alt="1"
       />
     );
   } else if (activeButton === "b2") {
     laptopScreen = (
       <img
         className="laptopScreen"
-        src="Mission-X-Images/homepageImages/gamesScreen.png"
+        src="mission-x-images/homepage-images/gamesScreen.png"
+        alt="2"
       />
     );
   } else if (activeButton === "b3") {
     laptopScreen = (
       <img
         className="laptopScreen"
-        src="Mission-X-Images/homepageImages/chatbotScreen.png"
+        src="mission-x-images/homepage-images/chatbotScreen.png"
+        alt="3"
       />
     );
   } else if (activeButton === "b4") {
     laptopScreen = (
       <img
         className="laptopScreen"
-        src="Mission-X-Images/homepageImages/augmentedScreen.png"
+        src="mission-x-images/homepage-images/augmentedScreen.png"
+        alt="4"
       />
     );
   }
@@ -117,14 +121,21 @@ export default function WeOffer() {
           <h3 className="weOfferText2">What will students create?</h3>
           <div className="weOfferCards">
             {weOfferArray.map((item, i) => (
-              <div onClick={() => handleBigClick(i + 1)} className="mapCards">{createOfferCard([item])}</div>
+              <div onClick={() => handleBigClick(i + 1)} className="mapCards">
+                {createOfferCard([item])}
+              </div>
             ))}
           </div>
         </div>
 
         <div className="weOfferPic">
           <div>{laptopScreen}</div>
-          <RadioGroup className={styles.root} value={activeButton} row margin="dense">
+          <RadioGroup
+            className={styles.root}
+            value={activeButton}
+            row
+            margin="dense"
+          >
             <Radio value="b1" onClick={handleClick} />
             <Radio value="b2" onClick={handleClick} />
             <Radio value="b3" onClick={handleClick} />

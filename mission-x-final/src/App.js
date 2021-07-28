@@ -12,7 +12,7 @@ export default function App() {
       <Router>
         <Switch>
           <Route
-          path="/home"
+          path="/"
           exact
           component={Homepage}
           />
