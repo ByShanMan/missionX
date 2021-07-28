@@ -139,7 +139,7 @@ const Dashboard = () => {
                     })} >
 
                             <a href = '#' className = 'bottom-links'>
-                                <img className = 'bottom-img' src ="/Mission-X-Images/dashboard-images/openprofile.png" />
+                                <img className = 'bottom-img' src ="/Mission-X-Images/dashboard-images/profileicon.png" />
                                 <p className = {clsx('bottom-text', {
                                             ['hidden']: !large,
                                             ['hidden']: large,
@@ -147,7 +147,7 @@ const Dashboard = () => {
                             </a>
 
                             <a href = '#' className = 'bottom-links'>
-                                <img className = 'bottom-img' src ="/Mission-X-Images/dashboard-images/opensettings.png" />
+                                <img className = 'bottom-img' src ="/Mission-X-Images/dashboard-images/settingsicon.png" />
                                 <p className = {clsx('bottom-text', {
                                             ['hidden']: !large,
                                             ['hidden']: large,
@@ -155,7 +155,7 @@ const Dashboard = () => {
                             </a>
 
                             <a href = '#' className = 'bottom-links'>
-                                <img className = 'bottom-img' src ="/Mission-X-Images/dashboard-images/logout.png" />
+                                <img className = 'bottom-img' src ="/Mission-X-Images/dashboard-images/logouticon.png" />
                                 <p className = {clsx('bottom-text', {
                                             ['hidden']: !large,
                                             ['hidden']: large,
