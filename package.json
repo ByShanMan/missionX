@@ -1,0 +1,28 @@
+{
+  "name": "missionx",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/ByShanMan/missionX/edit/main/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ByShanMan/missionX.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ByShanMan/missionX/issues"
+  },
+  "homepage": "https://github.com/ByShanMan/missionX#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.12"
+  }
+}
