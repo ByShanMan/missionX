@@ -1,35 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import "./App.css";
+import TPBApp from './tpbComponents/TPBApp.js';
 
-import ProjectsPage from './projects-page-components/projectsPage';
-import Homepage from "./homepage-components/homepage"
-import ProfileViewer from "./profile-viewer-components/ProfileViewer";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
-export default function App() {
+function App() {
   return (
-    <>
       <Router>
-        <Switch>
-          <Route
-          path="/"
-          exact
-          component={Homepage}
-          />
-          <Route
-            path="/profile/"
-            exact
-            component={ProfileViewer}
-          />
-          <Route
-          path="/projects"
-          exact
-          component={ProjectsPage}
-          />
-        </Switch>
+        <div className="MainContainer">  
+          <TPBApp />
+        </div>
       </Router>
-    </>
-      
-    
   );
 }
+
+export default App;

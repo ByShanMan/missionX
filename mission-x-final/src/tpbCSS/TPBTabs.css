@@ -1,0 +1,318 @@
+/* colours:
+lightest blue
+Hex #DAF2FE
+RGB 218, 242, 254
+
+blue
+Hex #B2E5FA
+RGB 178, 229, 250
+
+dark blue
+Hex #43C0F6
+RGB 67, 192, 246 */
+
+
+/* general styling */
+
+img {
+    cursor: grab;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    align-items: center;
+    background-color: #43C0F6;
+}
+
+
+
+.active {
+    color: rgb(114, 114, 110);
+    background-color: #B2E5FA;
+}
+
+.activeSelectButton {
+    color: rgb(71, 71, 49);
+    background-color: #B2E5FA;
+}
+
+
+
+
+/* idk how to explain, closes the gap between display area and show all tabs */
+.active-reveal {
+    width: 6.5%;
+}
+
+
+/* tab/menu thingys merged */
+.hide-reveal {
+    display: none;
+}
+
+
+/* collapsed tabs */
+
+/*this right here is the base of the collapsed tabs  */
+.tabs-showIcons {
+    width: 118px;
+    height: 957px;
+    position: absolute;
+    background-color: #43C0F6;
+}
+
+
+/* collapsed avatar */
+.collapsedTabs img {
+    height: 79px;
+    width: 79px;
+    padding: 12px;
+}
+
+
+#collapsedButtonImg {
+    width: 40px;
+    height: 40px;
+    margin: 10px 21px;
+    background-color: transparent;
+}
+
+
+
+/* .collapsedTabsFull {
+    cursor:crosshair;
+  } */
+
+
+/* right chevron arrow styling */
+.switch-chevronR {
+    cursor: pointer;
+    width: 64px;
+    height: 72px;
+    background-color: #B2E5FA;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 10px 10px 0px;
+    position: relative;
+    margin-top: 10px;
+    left: 0px;
+}
+
+.switch-chevronR img {
+    width: 18px;
+    position: absolute;
+    left: 26px;
+    margin-top: 18px;
+}
+
+
+/* collapsed profile, settings, logout */
+.tpb-tabs-tiny-links {
+    margin-left: 45px;
+    margin-top: 50px;
+    width: 30px;
+    height: 90px;
+}
+
+.tpb-tabs-tiny-links img {
+    width: 17.51px;
+    height: 17.51px;
+}
+
+
+/* 
+ .select-tab {
+    background-color: #43C0F6;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+  }
+.active-select-tab {
+    background-color: #B2E5FA;
+    height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  }  */
+
+.move-arrow {
+    display: none;
+}
+
+
+
+
+
+
+
+/* EXPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANDED TABS */
+.tabs-showAll {
+    height: 957px;
+    width: 236px;
+    background-color: #43C0F6;
+    position: relative;
+}
+
+
+.avatar-area-expanded {
+    width: 79px;
+    height: 79px;
+    margin: 20px 80px;
+    background-color: transparent;
+}
+
+
+.avatar-area-expanded img {
+    height: 79px;
+    width: 79px;
+
+}
+
+/* this is controlling the open/expanded tabs image thingy*/
+#expandedButtonImg {
+    margin-right: 10px;
+    width: auto;
+    height: 28px;
+}
+
+.tabsExpanded {
+    width: 236px;
+}
+.tabsExpanded button {
+    height: 53px;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    font-family: "open sans";
+    font-weight:bold;
+    color: white;
+    background-color: transparent;
+    margin-left: 5px;
+    display: flex;
+    
+}
+
+
+
+
+/* left chevron styling*/
+.switch-chevronL {
+    cursor: pointer;
+    width: 64px;
+    height: 72px;
+    background-color: #B2E5FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 520px;
+    border-radius: 10px 0px 0px 10px;
+    position: absolute;
+    margin-top: 40px;
+    left: 172px;
+}
+
+
+.switch-chevronL img {
+    width: 18px;
+    position: absolute;
+    right: 25px;
+    margin-top: 0px;
+}
+
+
+/* little thingys bottom left */
+.tpb-tiny-links {
+    width: 12%;
+    font-size: 12px;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    left: 0;
+    margin-top: 330px;
+
+}
+
+
+/* this is styling the .tpb-tiny-links */
+.bottom-left {
+    margin-right: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+
+.bottom-left img {
+    width: 15px;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* right area display ting */
+
+/* display alignment */
+.tpb-display-area {
+    display: flex;
+    width: 1684px;
+}
+
+/* display sizing */
+.tpb-display {
+    width: 1684px;
+    height: 957px;
+    background-color: #B2E5FA;
+}
+
+
+.butt-display-area {
+    display: flex;
+    margin-left: 800px;
+    padding-top: 5px;
+    position: absolute;
+}
+
+.butt-display-area button {
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    width: 200px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 6px;
+    justify-content: center;
+    margin-left: 27px;
+
+}
+
+.takeButt {
+    background-color: #e7aa2c;
+}
+.takeButt:hover {
+    background-color: #e7c52c;
+}
+
+.helpButt {
+    background-color: #fb2085;
+}
+.helpButt:hover {
+    background-color: #fb20a7;
+}
+
+.moreButt {
+    background-color: #36c1f6;
+}
+.moreButt:hover {
+    background-color:#36d0f6;
+}

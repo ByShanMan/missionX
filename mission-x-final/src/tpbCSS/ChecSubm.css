@@ -1,0 +1,54 @@
+.checkSubmTitle {
+display: flex;
+font-family: "nunito";
+color: grey;
+}
+
+.checkSubmTitle h1{
+    margin-left: 50px;
+    margin-right: 600px;
+    padding-top: 50px;
+}
+.checkSubmTitle button{
+    margin-left: 30px;
+    padding-top: 60px;
+    padding-bottom: 0px;
+    width: auto;
+    height: 30px;
+    background-color: transparent;
+    font-family: "nunito";
+}
+
+.checkSubmTitle img {
+    width:20px;
+    height:20px;
+    margin-right: 10px;
+}
+
+
+.checkSubmCards {
+    margin-left: 40px;
+    width: 95%;
+    height: 700px;
+    overflow-x: hidden;
+    overflow-y: scroll; 
+    
+}
+
+
+.checkSubmCards input {
+    height: 40px;
+    width: 20px;
+    display: flex;
+    
+}
+
+
+
+
+
+/* this is under the const root thingy, don't bother, just for reference.
+changing the background colour yerara mean
+    .makeStyles-root-12{
+    background-color: #B2E5FA;
+} */
