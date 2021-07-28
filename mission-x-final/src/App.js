@@ -26,6 +26,11 @@ export default function App() {
           exact
           component={ProjectsPage}
           />
+          <Route 
+          path="/dashboard"
+          exact 
+          component={DashboardApp}
+          />
         </Switch>
       </Router>
     </>
