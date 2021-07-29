@@ -6,7 +6,7 @@ export default function teacherAvatar() {
     return (
         <div>
             <div className="avatars">
-             <img className="avatar1" src="./loginPageImages/teachers.png" alt="Teachers"></img>
+             <img className="avatar1" src="./Mission-X-Images/login-images/teachers.png" alt="Teachers"></img>
                 <h1 className='avatarName'>Teachers</h1>
             </div>
   

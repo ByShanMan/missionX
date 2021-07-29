@@ -2,14 +2,13 @@
     display:flex;
 }
 
-
-
 /* --- Project Title --- */
 .projectTitle {
     padding-top: 3%;
 }
+
 .projectTitle h1 {
-    width: 160px;
+    margin-left: 450px;
     height: 40px;
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
@@ -19,11 +18,9 @@
 .projectSubtitle {
     font-size: 20px;
     color: slategrey;
-    position: relative;
-    left: 24.5em;
+    margin-left: 450px;
+    
 }
-
-
 
 /* --- Blue-Button-Group --- */
 .blueButtonOptions {
@@ -47,8 +44,6 @@
 .showText {
     padding-right: 2.5em
 }
-
-
 
 /* --- Project-Card-Grid --- */
 .projectCardArea {

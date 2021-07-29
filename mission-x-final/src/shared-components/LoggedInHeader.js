@@ -59,12 +59,14 @@ export default function LoggedInHeader() {
               </div>
               <div className="loginButtons">
                 {loggedInUsers.map(function (loggedInUser, index) {
-              return (
-                <div key={index}>
-                  <p>{loggedInUser.first_name} {loggedInUser.last_name}</p>
-                </div>
-              );
-            })}
+                  return (
+                    <div key={index}>
+                      <p>
+                        {loggedInUser.first_name} {loggedInUser.last_name}
+                      </p>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>

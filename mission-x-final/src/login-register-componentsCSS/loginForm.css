@@ -8,8 +8,6 @@
     top: 0;
     left: 0;
     background-color: rgba(0,0,0,0.3);
-    /* visibility: hidden; */
-    /* opacity: 0; */
     transition: visibility 0s, opacity 0.5s;
     
 }
@@ -19,6 +17,7 @@
     opacity: 1;
 }
 
+/*student side*/
 .modalContentL {
     display: flex;
     justify-content: center;
@@ -29,9 +28,9 @@
     width: 25%;
     height: 80%;
     background-color: white;
-   
 }
 
+/*teacher side*/
 .modalContentR {
     display: flex;
     justify-content: center;
@@ -43,6 +42,7 @@
     background-color: white;
 }
 
+/*contains all content: avatar, forms and buttons*/
 .gridContainer {
     margin: 20px;
     width: 280px;
@@ -50,6 +50,7 @@
     
 }
 
+/*sign up form*/
 .signUp {
     height: 10%;
     width: 90%;
@@ -67,6 +68,7 @@
     margin-bottom: 100px;
 }
 
+/*login form*/
 .email {
     font-family: 'Nunito', sans-serif;
     font-size: 12px;
