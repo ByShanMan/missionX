@@ -3,6 +3,7 @@ import React from 'react'
 import ProjectsPage from './projects-page-components/projectsPage';
 import Homepage from "./homepage-components/homepage"
 import ProfileViewer from "./profile-viewer-components/ProfileViewer";
+import DashboardApp from "./dashboard/DashboardApp"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 

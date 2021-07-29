@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import LoggedInHeader from "../shared-components/LoggedInHeader";
 import AvatarCard from "./AvatarCard";
 import InfoCard from "./InfoCard";
+import InfoCard2 from "./InfoCard2"
 import MainFooter from "../shared-components/MainFooter";
 
 import "../profile-viewer-componentsCSS/ProfileViewer.css";
@@ -39,6 +40,7 @@ const useStyles = makeStyles({
 export default function ProfileViewer() {
   const styles = useStyles();
   const [selectedUsers, setSelectedUsers] = useState([]);
+  let ActiveInfoCard = ""
 
   console.log(window.location.search);
 
