@@ -94,12 +94,12 @@ export default function ProfileViewer() {
     );
     setActiveDashButtons(
       <div>
-        <Link to="/projects">
+        <Link to="/projects" style={{ textDecoration: "none" }}>
           <Button variant="contained" className={styles.projectButton}>
             back to projects
           </Button>
         </Link>
-        <Link to="/dashboard">
+        <Link to="/dashboard" style={{ textDecoration: "none" }}>
           <Button variant="contained" className={styles.dashButton}>
             back to dashboard
           </Button>
@@ -127,7 +127,7 @@ export default function ProfileViewer() {
       </Grid>
     );
     setActiveDashButtons(
-      <Link to="/projects">
+      <Link to="/projects" style={{ textDecoration: "none" }}>
         <Button variant="contained" className={styles.projectButton}>
           back to projects
         </Button>

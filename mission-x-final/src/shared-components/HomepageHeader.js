@@ -49,7 +49,7 @@ export default function HomepageHeader() {
             />
           </div>
           <div className="middleButtons">
-            <Link to="/">
+            <Link to="/" style={{ textDecoration: 'none' }}>
               <p>HOME</p>
             </Link>
             <p>FEATURES</p>

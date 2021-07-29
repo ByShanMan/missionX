@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { Avatar } from "@material-ui/core";
 import { Container } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 import "../shared-componentsCSS/LoggedInHeader.css";
 import axios from "axios";
@@ -31,7 +32,9 @@ export default function LoggedInHeader() {
             />
           </div>
           <div className="middleButtons">
-            <p>HOME</p>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <p>HOME</p>
+            </Link>
             <p>FEATURES</p>
             <p>TEACHERS</p>
           </div>
