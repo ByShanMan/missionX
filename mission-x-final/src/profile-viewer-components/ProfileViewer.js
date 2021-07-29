@@ -12,6 +12,7 @@ import { Container } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
 import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
+import { Link } from "react-router-dom";
 
 import axios from "axios";
 
@@ -27,7 +28,7 @@ const useStyles = makeStyles({
     height: "50px",
   },
   projectButton: {
-    '&:hover': {
+    "&:hover": {
       background: "rgb(249,28,133)",
     },
     minWidth: "200px",
@@ -39,10 +40,10 @@ const useStyles = makeStyles({
     background: "rgb(249,28,133)",
   },
   dashButton: {
-    '&:hover': {
+    "&:hover": {
       background: "gold",
     },
-    marginLeft: '60px',
+    marginLeft: "60px",
     minWidth: "200px",
     borderRadius: "10px",
 
@@ -50,8 +51,7 @@ const useStyles = makeStyles({
     fontWeight: "700",
     color: "white",
     background: "gold",
-  }
-
+  },
 });
 
 export default function ProfileViewer() {
@@ -94,12 +94,16 @@ export default function ProfileViewer() {
     );
     setActiveDashButtons(
       <div>
-        <Button variant="contained" className={styles.projectButton}>
-          back to projects
-        </Button>
-        <Button variant="contained" className={styles.dashButton}>
-          back to dashboard
-        </Button>
+        <Link to="/projects">
+          <Button variant="contained" className={styles.projectButton}>
+            back to projects
+          </Button>
+        </Link>
+        <Link to="/dashboard">
+          <Button variant="contained" className={styles.dashButton}>
+            back to dashboard
+          </Button>
+        </Link>
       </div>
     );
   };
@@ -123,9 +127,11 @@ export default function ProfileViewer() {
       </Grid>
     );
     setActiveDashButtons(
-      <Button variant="contained" className={styles.projectButton}>
-        back to projects
-      </Button>
+      <Link to="/projects">
+        <Button variant="contained" className={styles.projectButton}>
+          back to projects
+        </Button>
+      </Link>
     );
   };
 
@@ -145,9 +151,7 @@ export default function ProfileViewer() {
           </Grid>
           {ActiveInfoCard}
         </Grid>
-        <div className={styles.navButtons}>
-          {ActiveDashButtons}
-        </div>
+        <div className={styles.navButtons}>{ActiveDashButtons}</div>
       </Container>
       <MainFooter />
     </div>

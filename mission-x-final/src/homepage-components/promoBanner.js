@@ -8,6 +8,9 @@ import "../homepage-componentsCSS/promoBanner.css";
 
 const useStyles = makeStyles({
   signupButton: {
+    '&:hover': {
+      background: "rgb(249,28,133)",
+    },
     background: "#F91C85",
     padding: "0.2em 3em",
     fontFamily: "Segoe UI",
@@ -16,7 +19,12 @@ const useStyles = makeStyles({
     borderRadius: "10px",
     marginLeft: "2rem",
   },
-  learnMoreButton: {
+  learnMoreButton: { 
+    '&:hover': {
+    background: 'none',
+    borderWidth: '4px',
+    borderColor: 'rgb(67,192,246)',
+},
     border: "4px solid #43C0F6",
     background: "#fff",
     color: "#767676",

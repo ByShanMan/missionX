@@ -6,63 +6,63 @@ import { Button } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 
-const useStyles = makeStyles(
-  {
-    root: {
-      display: "flex",
-      marginBottom: "6em",
-      marginTop: "3em",
+const useStyles = makeStyles({
+  root: {
+    display: "flex",
+    marginBottom: "6em",
+    marginTop: "3em",
+  },
+  leftImage: {
+    maxHeight: "450px",
+    marginLeft: "20%",
+    marginTop: "10%",
+    marginBottom: "10%",
+  },
+  rightText: {
+    color: "#767676",
+    paddingTop: "7%",
+    paddingLeft: "4%",
+    paddingRight: "7%",
+  },
+  textHeading: {
+    paddingBottom: "5%",
+    fontFamily: "Nunito",
+  },
+  textSubHeading: {
+    paddingBottom: "5%",
+    fontFamily: "Nunito",
+  },
+  textInfo: {
+    paddingBottom: "5%",
+    fontSize: "26px",
+    fontFamily: "Nunito",
+  },
+  btnEnquire: {
+    border: "4px solid #43C0F6",
+    background: "#fff",
+    color: "#767676",
+    fontFamily: "Segoe UI",
+    fontWeight: "bold",
+    fontSize: "20px",
+    padding: "0em 2em",
+    borderRadius: "10px",
+  },
+  btnSignUp: {
+    "&:hover": {
+      background: "rgb(249,28,133)",
     },
-    leftImage: {
-      maxHeight: "450px",
-      marginLeft: "20%",
-      marginTop: "10%",
-      marginBottom: "10%"
-    },
-    rightText: {
-    
-      color: '#767676',
-      paddingTop: "7%",
-      paddingLeft: "4%",
-      paddingRight: "7%"
-    },
-    textHeading: {
-      paddingBottom: "5%",
-      fontFamily: 'Nunito',
-    },
-    textSubHeading: {
-      paddingBottom: "5%",
-      fontFamily: 'Nunito',
-    },
-    textInfo: {
-      paddingBottom: "5%",
-      fontSize: "26px",
-      fontFamily: 'Nunito',
-    },
-    btnEnquire: {
-      border: "4px solid #43C0F6",
-      background: "#fff",
-      color: "#767676",
-      fontFamily: "Segoe UI",
-      fontWeight: "bold",
-      fontSize: "20px",
-      padding: "0em 2em",
-      borderRadius: "10px",
-    },
-    btnSignUp: {
-      color: "white",
-      background: "#F91C85",
-      padding: "0.2em 3em",
-      fontFamily: "Segoe UI",
-      fontWeight: "bold",
-      fontSize: "20px",
-      borderRadius: "10px",
-      marginLeft: "2rem",
-    },
-    
+    color: "white",
+    background: "#F91C85",
+    padding: "0.2em 3em",
+    fontFamily: "Segoe UI",
+    fontWeight: "bold",
+    fontSize: "20px",
+    borderRadius: "10px",
+    marginLeft: "2rem",
+  },
 });
 
-export default function BottomPromo() {
+export default function BottomPromo(props) {
   const styles = useStyles();
 
   return (
@@ -83,12 +83,14 @@ export default function BottomPromo() {
             Start teaching Digital Technologies today.
           </Typography>
           <Typography variant="body2" className={styles.textInfo}>
-            If you need more information, we are happy to answer any questions you
-            may have.
+            If you need more information, we are happy to answer any questions
+            you may have.
           </Typography>
           <div className={styles.rightButtons}>
             <Button className={styles.btnEnquire}>ENQUIRE NOW</Button>
-            <Button className={styles.btnSignUp} variant="contained">SIGN UP</Button>
+            <Button className={styles.btnSignUp} variant="contained">
+              SIGN UP
+            </Button>
           </div>
         </Grid>
       </Grid>

@@ -4,6 +4,7 @@ import LoginForm from "../login-register-components/loginForm";
 
 import { Container } from "@material-ui/core/";
 import { Dialog } from "@material-ui/core/";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core";
 
 import "../shared-componentsCSS/HomepageHeader.css";
@@ -25,7 +26,7 @@ function PopUpLogin(props) {
       onClose={props.closeDialog}
       classes={{ paper: styles.paper }}
     >
-      <LoginForm handleDialogClose = {props.closeDialog} />
+      <LoginForm handleDialogClose={props.closeDialog} />
     </Dialog>
   );
 }
@@ -48,21 +49,17 @@ export default function HomepageHeader() {
             />
           </div>
           <div className="middleButtons">
-            <p>HOME</p>
+            <Link to="/">
+              <p>HOME</p>
+            </Link>
             <p>FEATURES</p>
             <p>TEACHERS</p>
           </div>
           <div className="rightEdgeStuff">
             <div className="flags">
               <div className="lang">LANG</div>
-              <img
-                src="mission-x-images/shared-images/NZFlag.png"
-                alt=""
-              />
-              <img
-                src="mission-x-images/shared-images/MaoriFlag.png"
-                alt=""
-              />
+              <img src="mission-x-images/shared-images/NZFlag.png" alt="" />
+              <img src="mission-x-images/shared-images/MaoriFlag.png" alt="" />
             </div>
             <div className="loginContainer">
               <div className="avatar">
