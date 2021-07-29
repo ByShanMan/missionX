@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import LoggedInHeader from "../shared-components/LoggedInHeader";
 import AvatarCard from "./AvatarCard";
 import InfoCard from "./InfoCard";
-import InfoCard2 from "./InfoCard2"
+import InfoCard2 from "./InfoCard2";
 import MainFooter from "../shared-components/MainFooter";
 
 import "../profile-viewer-componentsCSS/ProfileViewer.css";
@@ -23,10 +23,13 @@ const useStyles = makeStyles({
     paddingTop: "7%",
   },
   navButtons: {
-    marginLeft: "70%",
+    marginLeft: "58%",
     height: "50px",
   },
   projectButton: {
+    '&:hover': {
+      background: "rgb(249,28,133)",
+    },
     minWidth: "200px",
     borderRadius: "10px",
 
@@ -35,12 +38,27 @@ const useStyles = makeStyles({
     color: "white",
     background: "rgb(249,28,133)",
   },
+  dashButton: {
+    '&:hover': {
+      background: "gold",
+    },
+    marginLeft: '60px',
+    minWidth: "200px",
+    borderRadius: "10px",
+
+    fontSize: "16px",
+    fontWeight: "700",
+    color: "white",
+    background: "gold",
+  }
+
 });
 
 export default function ProfileViewer() {
   const styles = useStyles();
   const [selectedUsers, setSelectedUsers] = useState([]);
-  var ActiveInfoCard = ''
+  const [ActiveInfoCard, setActiveInfoCard] = useState("");
+  const [ActiveDashButtons, setActiveDashButtons] = useState("");
 
   console.log(window.location.search);
 
@@ -49,56 +67,68 @@ export default function ProfileViewer() {
       .get("http://localhost:4000/profile/" + window.location.search)
       .then((response) => {
         console.log(response.data);
+        response.data[0].role === "teacher"
+          ? handleTeacherUser(response.data[0])
+          : handleStudentUser(response.data[0]);
         setSelectedUsers(response.data);
       })
       .catch((err) => console.log(err));
   }, []);
 
-  if (
-    selectedUsers === "http://localhost:4000/profile/user_id=6" ||
-    "http://localhost:4000/profile/user_id=18"
-  ) {
-    ActiveInfoCard = (
+  const handleTeacherUser = (user) => {
+    console.log("teacher user");
+    setActiveInfoCard(
       <Grid item sm={8}>
-        {selectedUsers.map(function (selectedUser, index) {
-          return (
-            <div key={index}>
-              <InfoCard
-                fName={selectedUser.first_name}
-                lName={selectedUser.last_name}
-                school={selectedUser.school}
-                course={selectedUser.course_purchased}
-                contact={selectedUser.contact_number}
-                date={new Date(selectedUser.date_of_birth).toDateString()}
-                email={selectedUser.email}
-              />
-            </div>
-          );
-        })}
+        <div>
+          <InfoCard
+            fName={user.first_name}
+            lName={user.last_name}
+            school={user.school}
+            course={user.course_purchased}
+            contact={user.contact_number}
+            date={new Date(user.date_of_birth).toDateString()}
+            email={user.email}
+          />
+        </div>
       </Grid>
     );
-  } else {
-    ActiveInfoCard = (
+    setActiveDashButtons(
+      <div>
+        <Button variant="contained" className={styles.projectButton}>
+          back to projects
+        </Button>
+        <Button variant="contained" className={styles.dashButton}>
+          back to dashboard
+        </Button>
+      </div>
+    );
+  };
+
+  const handleStudentUser = (user) => {
+    console.log("student user");
+
+    setActiveInfoCard(
       <Grid item sm={8}>
-        {selectedUsers.map(function (selectedUser, index) {
-          return (
-            <div key={index}>
-              <InfoCard2
-                fName={selectedUser.first_name}
-                lName={selectedUser.last_name}
-                school={selectedUser.school}
-                teacher={selectedUser.teacher_id}
-                contact={selectedUser.contact_number}
-                date={new Date(selectedUser.date_of_birth).toDateString()}
-                email={selectedUser.email}
-              />
-            </div>
-          );
-        })}
+        <div>
+          <InfoCard2
+            fName={user.first_name}
+            lName={user.last_name}
+            school={user.school}
+            teacher={user.teacher_id}
+            contact={user.contact_number}
+            date={new Date(user.date_of_birth).toDateString()}
+            email={user.email}
+          />
+        </div>
       </Grid>
     );
-  }
-  
+    setActiveDashButtons(
+      <Button variant="contained" className={styles.projectButton}>
+        back to projects
+      </Button>
+    );
+  };
+
   return (
     <div className="projectView">
       <LoggedInHeader />
@@ -115,14 +145,8 @@ export default function ProfileViewer() {
           </Grid>
           {ActiveInfoCard}
         </Grid>
-
         <div className={styles.navButtons}>
-          <Button variant="contained" className={styles.projectButton}>
-            back to projects
-          </Button>
-          <Button variant="contained" className={styles.dashButton}>
-            back to dashboard
-          </Button>
+          {ActiveDashButtons}
         </div>
       </Container>
       <MainFooter />

@@ -20,7 +20,7 @@ const useStyles = makeStyles({
     fontSize: "15px",
 
     minWidth: "130px",
-    marginLeft: "1020px",
+    marginLeft: "1320px",
     marginTop: "100px"
   },
   buttonDash: {

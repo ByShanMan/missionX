@@ -26,6 +26,11 @@ const useStyles= makeStyles({
         marginTop: '1.5em'
     },
     avCardButtons: {
+        '&:hover': {
+            background: 'none',
+            borderWidth: '3px',
+            borderColor: 'rgb(67,192,246)',
+        },
         display: 'flex',
         minWidth: '200px',
         marginTop: '3em',
