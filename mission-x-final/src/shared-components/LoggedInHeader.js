@@ -11,7 +11,7 @@ export default function LoggedInHeader() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/teacher-profile/" + window.location.search)
+      .get("http://localhost:4000/profile/" + window.location.search)
       .then((response) => {
         console.log(response.data);
         setLoggedInUsers(response.data);
