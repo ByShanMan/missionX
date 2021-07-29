@@ -3,7 +3,7 @@ import axios from "axios";
 import { Button } from "@material-ui/core";
 import Snackbar from "@material-ui/core/Snackbar";
 import { makeStyles } from "@material-ui/styles";
-
+import { useHistory } from "react-router-dom";
 import "../login-register-componentsCSS/loginForm.css";
 
 const useStyles = makeStyles({
@@ -24,6 +24,7 @@ const useStyles = makeStyles({
 
 function Form1() {
   const classes = useStyles();
+  const history = useHistory()
 
   const [open, setOpen] = useState(false);
   const [message, setMessage] = useState("");
@@ -37,6 +38,7 @@ function Form1() {
         password: password,
       })
       .then((response) => {
+        history.push('/projects' + '?user_id=' + response.data[0].user_id)
         setMessage("Login Successful!");
         setOpen(true);
         console.log(response.status);
