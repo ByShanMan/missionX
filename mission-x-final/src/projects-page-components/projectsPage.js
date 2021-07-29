@@ -8,6 +8,7 @@ import SelectMenu from "./selectMenu";
 import BackUp from "./backUp";
 import MainFooter from "../shared-components/MainFooter";
 
+import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 
 import studentProjects from "./studentProjectsArr";
@@ -31,26 +32,29 @@ function createProject(project) {
 export default function ProjectsPage() {
   return (
     <div className="mainContainer">
-      <LoggedInHeader />
-      <ProjectTitle />
-      <CardDifficulty />
-      <div className="main2">
-        <SelectMenu />
-        <div className="projectCardArea">
-          <Grid container spacing={10}>
-            {studentProjects.map((item, i) => (
-              <Grid item xs={4}>
-                {createProject(item)}
-              </Grid>
-            ))}
-          </Grid>
+      <Container maxWidth={"xl"}>
+        <LoggedInHeader />
+        <ProjectTitle />
+        <div className="blueButtonOptions">
+          <CardDifficulty />
+          <NumberOfCards />
+        </div>
+        <div className="main2">
+          <SelectMenu />
+          <div className="projectCardArea">
+            <Grid container spacing={10}>
+              {studentProjects.map((item, i) => (
+                <Grid item xs={4}>
+                  {createProject(item)}
+                </Grid>
+              ))}
+            </Grid>
+          </div>
         </div>
 
-        <NumberOfCards />
-      </div>
-
-      <BackUp />
-      <MainFooter />
+        <BackUp />
+        <MainFooter />
+      </Container>
     </div>
   );
 }

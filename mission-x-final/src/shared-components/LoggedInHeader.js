@@ -20,7 +20,7 @@ export default function LoggedInHeader() {
   }, []);
 
   return (
-    <div className="header">
+    <div className="MainHeaderColor">
       <Container maxWidth="xl">
         <div className="headerBody">
           <div className="logo">

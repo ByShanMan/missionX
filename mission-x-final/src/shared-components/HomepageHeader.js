@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 import LoginForm from "../login-register-components/loginForm";
 
-import Container from "@material-ui/core/Container";
-import Dialog from "@material-ui/core/Dialog";
+import { Container } from "@material-ui/core/";
+import { Dialog } from "@material-ui/core/";
 import { makeStyles } from "@material-ui/core";
 
 import "../shared-componentsCSS/HomepageHeader.css";
@@ -37,7 +37,7 @@ export default function HomepageHeader() {
   };
 
   return (
-    <div className="header">
+    <div className="MainHeaderColour">
       <Container maxWidth="xl">
         <div className="headerBody">
           <div className="logo">

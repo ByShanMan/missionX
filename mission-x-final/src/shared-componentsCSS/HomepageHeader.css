@@ -1,51 +1,43 @@
-.header {
+.MainHeaderColour {
     background: #43C0F6;
+    max-width: 100%;
 }
-
 .headerBody {
     display: flex;
 }
-
 .middleButtons {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     width: 100%;
 }
-
 .middleButtons p {
     margin-left: 2rem;
     color: white;
     font-weight: bold;
     font-size: 20px;
 }
-
 .logo {
     justify-content: flex-start;
     margin-top: 0.5rem;
 }
-
 .logoPic {
     height: 5rem;
 }
-
 .flags {
     color: white;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-
 .flags img {
     object-fit: cover;
     margin-left: 1rem;
     width: 2rem;
 }
-
 .loginButtons {
     display: flex;
 }
-
 .loginButtons p {
     margin-left: 0.5rem;
     color: white;
@@ -53,20 +45,17 @@
     font-size: 20px;
     cursor: pointer;
 }
-
 .loginContainer {
     display: flex;
     min-width: 250px;
     align-items: center;
 }
-
 .rightEdgeStuff {
     display: flex;
     flex-direction: column;
     margin-top: 0.5rem;
     justify-content: flex-end;
 }
-
 .profileIcon {
     height: 2rem;
 }

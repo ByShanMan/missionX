@@ -98,6 +98,7 @@ export default function ProfileViewer() {
       </Grid>
     );
   }
+  
   return (
     <div className="projectView">
       <LoggedInHeader />
