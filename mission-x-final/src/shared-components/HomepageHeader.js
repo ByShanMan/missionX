@@ -43,8 +43,8 @@ export default function HomepageHeader() {
           <div className="logo">
             <img
               className="logoPic"
-              src="Mission-X-Images/shared-images/logoWorks.png"
-              alt="level up logo"
+              src="mission-x-images/shared-images/logoWorks.png"
+              alt=""
             />
           </div>
           <div className="middleButtons">
@@ -56,19 +56,20 @@ export default function HomepageHeader() {
             <div className="flags">
               <div className="lang">LANG</div>
               <img
-                src="Mission-X-Images/shared-images/NZFlag.png"
-                alt="nz flag"
+                src="mission-x-images/shared-images/NZFlag.png"
+                alt=""
               />
               <img
-                src="Mission-X-Images/shared-images/MaoriFlag.png"
-                alt="maori flag"
+                src="mission-x-images/shared-images/MaoriFlag.png"
+                alt=""
               />
             </div>
             <div className="loginContainer">
               <div className="avatar">
                 <img
                   className="profileIcon"
-                  src="Mission-X-Images/shared-images/profileIcon.png"
+                  src="mission-x-images/shared-images/profileIcon.png"
+                  alt=""
                 />
               </div>
               <div className="loginButtons">

@@ -1,40 +1,39 @@
+/* --- Baby Photo --- */
 .babyImage {
     height: 520px;
     width: 100%;
 }
 
+/* --- Overlay Div --- */
 .promoText {
-    margin-top: -430px;
+    margin-top: -530px;
     margin-left: 3em;
     width: 45%;
 }
-.span {
-    color: #45C1F6 }
-
+/* --- Main Title --- */
 .prepareYoungMinds {
     color: #767676;
     font-size: 68px;
     margin-bottom: 0;
 }
-
+/* --- Word-"Future" --- */
+.span {
+    color: #45C1F6 
+}
+/* --- Subtitle Paragraph --- */
 .letUsHelpYou {
     font-size: 30px;
     color: #767676;
 }
 
-.signupButton {
-    background: #F91C85;
+/* --- Button Group --- */
+.buttonGroup {
+    display: flex;
+    margin-left: 24%
 }
-
 .subtext {
     color: #767676;
     font-size: 16px;
     margin-left: 70%;
-    padding-right: 10%
-}
-
-.buttonGroup {
-    display: flex;
-    margin-left: 24%
 }
 

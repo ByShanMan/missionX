@@ -20,8 +20,9 @@ const useStyles = makeStyles({
     fontSize: "15px",
 
     minWidth: "130px",
-    marginLeft: "1320px",
-    marginTop: "100px"
+    marginLeft: "1140px",
+    marginTop: "50px",
+    marginBottom: "100px"
   },
   buttonDash: {
     backgroundColor: "#F4499B",
@@ -36,8 +37,9 @@ const useStyles = makeStyles({
     fontSize: "15px",
 
     minWidth: "130px",
-    marginLeft: "50px",
-    marginTop: "100px"
+    marginLeft: "125px",
+    marginTop: "50px",
+    marginBottom: "100px"
   },
 });
 
@@ -46,7 +48,7 @@ function BackUp() {
 
   return (
     <div className={styles.root}>
-      <Button className={styles.button} size="small" variant="contained" href="projectTitle">
+      <Button className={styles.button} size="small" variant="contained" href="projects">
         BACK TO TOP
       </Button>
       <div>

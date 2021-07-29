@@ -12,22 +12,20 @@ const useStyles = makeStyles({
   },
   overlay: {
     textAlign: "center",
-    justifyItems: "center",
-    marginLeft: "-360px",
+    marginLeft: "-340px",
     marginTop: "10px",
   },
   overlayImage: {
-    spacing: 'em',
-    marginTop: "10px",
-    height: "150px"
+    marginTop: "3px",
+    height: "150px",
   },
   overlayTitle1: {
-    fontSize: "36px",
+    fontSize: "30px",
     color: "white",
     fontWeight: "700",
   },
   overLayTitle2: {
-    fontSize: "36px",
+    fontSize: "30px",
     color: "white",
     fontWeight: "700",
   },
@@ -45,10 +43,14 @@ export default function DigitalSkillsCard(props) {
       />
       <div className={styles.overlay}>
         <div>
-          <img className={styles.overlayImage} src={props.overlayImage} alt="" />
+          <img
+            className={styles.overlayImage}
+            src={props.overlayImage}
+            alt=""
+          />
+          <p className={styles.overlayTitle1}>{props.overlayTitle1}</p>
+          <p className={styles.overLayTitle2}>{props.overlayTitle2}</p>
         </div>
-        <p className={styles.overlayTitle1}>{props.overlayTitle1}</p>
-        <p className={styles.overLayTitle2}>{props.overlayTitle2}</p>
       </div>
     </div>
   );

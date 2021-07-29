@@ -46,37 +46,37 @@ export default function PromoBanner() {
       </div>
       <Container maxWidth={"xl"}>
         <div className="promoText">
-            <h1 className="prepareYoungMinds">
-              Prepare young minds for a better <span>future.</span>
-            </h1>
-            <p className="letUsHelpYou">
-              Let us help you advance students in Digital Technologies and other
-              learning areas with our project-based learning programme.
-            </p>
-            <div className="buttonGroup">
-              <div>
-                <Button
-                  variant="outlined"
-                  color="primary"
-                  className={styles.learnMoreButton}
-                >
-                  LEARN MORE
-                </Button>
-              </div>
-
-              <div className="signupWithSubtext">
-                <Button
-                  variant="contained"
-                  color="secondary"
-                  className={styles.signupButton}
-                >
-                  SIGN UP
-                </Button>
-              </div>
+          <h1 className="prepareYoungMinds">
+            Prepare young minds for a better <span>future.</span>
+          </h1>
+          <p className="letUsHelpYou">
+            Let us help you advance students in Digital Technologies and other
+            learning areas with our project-based learning programme.
+          </p>
+          <div className="buttonGroup">
+            <div>
+              <Button
+                variant="outlined"
+                color="primary"
+                className={styles.learnMoreButton}
+              >
+                LEARN MORE
+              </Button>
             </div>
-            <p className="subtext">
-              *Basic subscription includes the first 15 projects free of charge.
-            </p>
+
+            <div>
+              <Button
+                variant="contained"
+                color="secondary"
+                className={styles.signupButton}
+              >
+                SIGN UP
+              </Button>
+            </div>
+          </div>
+          <p className="subtext">
+            *Basic subscription includes the first 15 projects free of charge.
+          </p>
         </div>
       </Container>
     </div>

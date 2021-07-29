@@ -8,7 +8,7 @@
     font-size: 40px;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .infoBlockButtons {
     display: flex;
@@ -16,7 +16,7 @@
     height: 40px;
     width: 80%;
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-left: 10em;
 }
 .buttonStyle {

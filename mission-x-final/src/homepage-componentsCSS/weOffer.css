@@ -1,12 +1,11 @@
+/* --- Main Container --- */
 .weOffer {
     display: flex;
     width: 100%;
     margin-top: 9em;
 }
 
-
-
-
+/* --- WeOffer-TextBox --- */
 .weOfferText {
     margin-left: 3em;
     width: 700px;
@@ -14,11 +13,10 @@
 }
 .weOfferText h2 {
     font-size: 48px;
-    padding-bottom: 30px;
 }
 .weOfferText p {
     font-size: 26px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .weOfferText2 {
     color: #767676;
@@ -26,14 +24,14 @@
     font-size: 36px;
     padding-bottom: 30px;
 }
+
+/* --- Blue-Cards Div --- */
 .weOfferCards {
     max-width: 800px;
     display: flex;
 }
 
-
-
-
+/* --- Laptop-Screen Div --- */
 .weOfferPic {
     flex-direction: column;
     justify-items: center;

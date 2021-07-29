@@ -3,6 +3,7 @@
 }
 
 
+
 /* --- Project Title --- */
 .projectTitle {
     padding-top: 3%;
@@ -14,8 +15,6 @@
     font-weight: 800;
     font-size: 38px;
     color: slategrey;
-    position: relative;
-    left: 12.8em;
 }
 .projectSubtitle {
     font-size: 20px;
@@ -23,6 +22,8 @@
     position: relative;
     left: 24.5em;
 }
+
+
 
 /* --- Blue-Button-Group --- */
 .blueButtonOptions {
@@ -34,18 +35,19 @@
 /* --- Card-Difficulty Bar --- */
 .cardLevelButtons {
     display: flex;
-    padding-left: 490px;
+    padding-left: 460px;
     height:  25px;
 }
 /* --- Number-of-Cards Bar --- */
 .showCards {
     width: 300px;
     display: flex;
-    margin-left: 700px;
+    margin-left: 680px;
 }
 .showText {
     padding-right: 2.5em
 }
+
 
 
 /* --- Project-Card-Grid --- */
@@ -53,17 +55,14 @@
     width: 80%;
     display:flex;
     margin-top: 40px;
-    margin-left: 150px;
+    margin-left: 100px;
     margin-bottom: 50px;
 } 
-
-
 /* --- Project-Card --- */
 .imgCard {
     height: 297px;
     width: 379px;
   }
-
 .projectCard h4 {
   font-family: 'Nunito', sans-serif;
   color: slategrey;
@@ -71,11 +70,9 @@
   text-align: center;
   padding-bottom: 0px;
 }
-
 .projectCard p {
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
     color:slategrey;
     text-align: center;
   }
-
