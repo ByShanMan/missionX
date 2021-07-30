@@ -32,8 +32,8 @@ function createProject(project) {
 export default function ProjectsPage() {
   return (
     <div className="mainContainer">
+      <LoggedInHeader />
       <Container maxWidth={"xl"}>
-        <LoggedInHeader />
         <ProjectTitle />
         <div className="blueButtonOptions">
           <CardDifficulty />
@@ -51,10 +51,9 @@ export default function ProjectsPage() {
             </Grid>
           </div>
         </div>
-
         <BackUp />
-        <MainFooter />
       </Container>
+      <MainFooter />
     </div>
   );
 }

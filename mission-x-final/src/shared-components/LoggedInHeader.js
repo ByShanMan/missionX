@@ -21,7 +21,7 @@ export default function LoggedInHeader() {
   }, []);
 
   return (
-    <div className="MainHeaderColor">
+    <div className="mainHeaderColour">
       <Container maxWidth="xl">
         <div className="headerBody">
           <div className="logo">
@@ -55,7 +55,7 @@ export default function LoggedInHeader() {
                 {loggedInUsers.map(function (loggedInUser, index) {
                   return (
                     <div key={index}>
-                      <Avatar>{loggedInUser.profile_pic}</Avatar>
+                      <img className="miniAvatar" src={loggedInUser.profile_pic} />
                     </div>
                   );
                 })}

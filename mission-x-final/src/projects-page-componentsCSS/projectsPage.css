@@ -55,8 +55,8 @@
 } 
 /* --- Project-Card --- */
 .imgCard {
-    height: 297px;
-    width: 379px;
+    height: 300px;
+    width: 400px;
   }
 .projectCard h4 {
   font-family: 'Nunito', sans-serif;

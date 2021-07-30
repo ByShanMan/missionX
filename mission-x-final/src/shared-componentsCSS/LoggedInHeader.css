@@ -1,31 +1,25 @@
-.MainHeaderColor {
+.mainHeaderColour {
     background: #43C0F6;
-    width: 100%;
 }
-
 .headerBody {
     display: flex;
 }
-
 .middleButtons {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     width: 100%;
 }
-
 .middleButtons p {
     margin-left: 2rem;
     color: white;
     font-weight: bold;
     font-size: 20px;
 }
-
 .logo {
     justify-content: flex-start;
     margin-top: 0.5rem;
 }
-
 .logoPic {
     height: 5rem;
 }
@@ -69,4 +63,8 @@
 
 .profileIcon {
     height: 2rem;
+}
+.miniAvatar {
+    height: 40px;
+    width: 40px
 }
