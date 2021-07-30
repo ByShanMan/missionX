@@ -9,3 +9,25 @@ Teachers can help students via the platform.
 It is designed so that the classes can be conducted either in-person or online although there is no video component to it.
 
 ## Creators:    Nathan ,  Goretti ,  Lusia , Shanan
+
+
+Pages by Allocation:
+
+### Nathan
+      ~ Home
+      ~ Student/Teacher Profile Viewer
+      
+### Goretti
+      ~ Login/Sign Up
+      ~ Student/Teacher Project Library
+      
+### Shanan
+      ~ Teacher Dashboard 
+        - Student Profiles
+        - Student Progress Tracker
+
+### Lusia
+      ~ Sudent/Teacher Project Builder
+      ~ Teacher Dashboard
+        - Student Help Requests
+      
