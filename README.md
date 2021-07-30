@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-This is the Home page, built by Nathan R. Using React.JS to build the main structure and components and Material-Ui to create smaller components such as MUI-Cards.
-=======
 # MRHQ Students Final Assessment - MISSION X
 
 The aim of the application is to run as a Learning Management System(LMS) for school teachers to deliver Digital Technologies curriculum (specifically, classes to learn programming) in an easy way.  
