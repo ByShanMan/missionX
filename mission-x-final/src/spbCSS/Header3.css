@@ -1,0 +1,82 @@
+.headerThree{
+    display:flex;
+    flex-direction: row;
+    height: 61px;
+    width: 100%;
+    font-family: 'nunito';
+    /* use open sans or nunito */
+}
+
+h2{
+    top: 5px;
+    font-family: 'nunito';
+}
+
+#headerLogos {
+ height: 60px;
+ width: 145.99px;
+ margin-right: 60px;
+}
+
+
+Button {
+position: static;
+}
+
+
+.progressButtons{
+    flex-direction: row;
+    
+}
+
+#Dot {
+    background-color: #FDF7C0;
+    border-color: #43C0F6;
+    border-radius: 70%;
+    height: 40px;
+    width: 40px;
+ 
+}
+
+#dot {
+    background-color:#43C0F6;
+    border-radius: 50%;
+    height: 17px;
+    width: 17px;
+
+  }
+
+
+
+ .flagsHeaders {
+    display: flex;
+    align-items: center;
+    margin-left: 1300px;
+  }
+.flagsHeaders img {
+    width: 15px;
+    margin-left: 5px;
+  }
+
+.flags{
+    
+    padding:3px;
+    display: flex;
+    right: 2px;
+
+}
+#langThree {
+    height:12px;
+    width:21.6px;
+}
+
+#maoriFlagThree {
+    height:12px;
+    width:21.6px;
+    margin-right:2px;
+}
+
+#nzFlagThree {
+    height:12px;
+    width:21.6px;
+};

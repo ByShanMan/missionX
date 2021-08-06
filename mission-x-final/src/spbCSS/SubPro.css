@@ -1,0 +1,61 @@
+.makeStyles-root-1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #B2E5FA;
+}
+
+.subPro{
+    display: flex;
+    width: 100%;
+}
+.subPro button{
+ width: 200px;
+ height: 200px;
+ background-color: deeppink;
+ border-radius: 30px;
+ margin-left: 280px;
+}
+.subPro p2{
+font-size: 40px;
+color:deeppink;
+margin-left: 300px;
+}
+.subPro p{
+    text-align: center;
+}
+.subPro h1{
+    text-align: center;
+}
+
+
+#scratch1 {
+height: 250px;
+width: 500px;
+margin-left: 150px;
+margin-top: 50px;
+}
+
+
+#teacher1 {
+    width: 500px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.sendPhoto{
+    width: 785px;
+}
+.sendPhoto img {
+    width: 120px;
+    height: auto;
+}
+
+
+.callTeacher img {
+    width: 120px;
+    height: auto;
+}
+.callTeacher {
+    width: 785px;
+}
+

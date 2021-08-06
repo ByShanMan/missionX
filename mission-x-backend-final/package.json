@@ -2,10 +2,10 @@
   "name": "mission-x-backend-final",
   "version": "1.0.0",
   "description": "",
-  "main": "login-register-backend.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon login-register-backend.js"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",

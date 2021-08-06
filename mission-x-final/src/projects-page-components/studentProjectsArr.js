@@ -7,7 +7,7 @@ const studentProjects = [
     activityType:"Animation",
     difficultyLevel:"BEGINNER",
     yearLevel:"1-4",
-    subjectMatter:"Computer Science"
+    subjectMatter:"Computer Science",
 },{
     id:"2",
     title: "My Birthday",

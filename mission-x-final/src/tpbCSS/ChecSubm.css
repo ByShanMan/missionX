@@ -1,0 +1,145 @@
+.MuiCard-root {
+    overflow: hidden;
+    margin-bottom: 10px;
+    height: 250px;
+    display: flex;
+}
+
+/* style the profile pics */
+#profile {
+ height: 65px;
+ width: 65px;
+ margin-left: 100px;
+ margin-top: 30px;
+ display: flex;
+}
+
+
+#submission {
+margin-left: 60px;
+margin-top: 35px;
+height: 200px;
+}
+
+/* titles and buttons */
+.checkSubmTitle {
+display: flex;
+font-family: "nunito";
+color: grey;
+}
+
+.checkSubmTitle h1{
+    margin-left: 50px;
+    margin-right: 600px;
+    padding-top: 50px;
+}
+.checkSubmTitle button{
+    margin-left: 30px;
+    padding-top: 60px;
+    padding-bottom: 0px;
+    width: auto;
+    height: 30px;
+    background-color: transparent;
+    font-family: "nunito";
+}
+
+.checkSubmTitle img {
+    width:20px;
+    height:20px;
+    margin-right: 10px;
+}
+
+/* cards styling area */
+.checkSubmCards {
+    margin-left: 40px;
+    width: 95%;
+    height: 700px;
+    overflow-x: hidden;
+    overflow-y: scroll; 
+    
+}
+
+.checkSubmCards p {
+    margin-left: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.checkSubmCards p2 {
+    margin-left: 300px;
+    margin-top: 30px;
+    color: grey;
+    font-family: 'nunito';
+    font-size: 14px;
+}
+
+
+
+/* The container for checkbox */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+  }
+  
+  /* On mouse-over, add a light blue background color */
+  .container:hover input ~ .checkmark {
+    background-color: #B2E5FA;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #43C0F6;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(235, 90, 179);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

@@ -1,0 +1,66 @@
+.makeStyles-root-1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #B2E5FA;
+}
+.makeScratch h1{
+margin-left: 600px;
+}
+
+.makeScratch h2{
+justify-items: center;
+margin-left: 280px;
+margin-top: 280px;
+font-size: 50px;
+color:black;
+opacity: 100%;
+
+
+animation-name: clickhere;
+animation-duration: 2s;
+animation-iteration-count: infinite;  
+}
+@keyframes clickhere {
+100% {color:#fd4a9d}
+}
+
+.makeScratch img{
+    cursor:pointer;
+    width: 1500px;
+    height: 700px;
+}
+
+.makeScratch button:hover{
+    opacity: 100%;
+}
+
+.makeScratch button{
+        cursor: pointer;
+        margin-left: 30px;
+        position: absolute;
+
+        animation-name: clickme;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;  
+        animation-direction: alternate-reverse;
+      }
+    @keyframes clickme {
+0%   {background-color:#DAF2FE; opacity:0%}
+50%  {background-color:#B2E5FA; opacity:50%}
+100% {background-color:#43C0F6; opacity: 100%}
+}
+
+
+
+
+
+
+
+/* unfortunately doesn't work
+    iframe {
+    margin-left: 180px;
+    margin-top: 50px;
+    width: 1200px;
+    height: 600px;
+    position: relative;
+} */

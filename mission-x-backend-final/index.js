@@ -85,4 +85,92 @@ app.post('/signup', (req, res) => {
 })
 
 
+// to get an avatar for TPB, (using a specific id for now)
+app.get('/avatart', (req, res) => {
+  db.query('SELECT * FROM users_table WHERE user_id = "6"', function (err, result) {
+     if (err) {
+         console.log("no teacher avatar");
+     } else {
+      console.log("teacher avatar is displaying in side bar")
+      res.send(result)
+     }
+   
+  })
+})
+
+// to get an avatar for SPB, (using a specific id for now)
+app.get('/avatars', (req, res) => {
+  db.query('SELECT * FROM users_table WHERE user_id = "7"', function (err, result) {
+     if (err) {
+         console.log("no student avatar");
+     } else {
+      console.log("student avatar is displaying in side bar")
+      res.send(result)
+     }
+   
+  })
+})
+
+// learning objectives for project builders
+app.get('/learningobj', (req, res) => {
+  db.query("SELECT * FROM project_table WHERE project_id = '22'", function (err, result) {
+      if (err) {
+          console.log("alexa, play coldplay - fix you");
+      } else {
+        console.log("learning objectives yuh!")
+          res.send(result)
+      }
+  })
+})
+// instructions for project builders
+app.get('/instructions', (req, res) => {
+  db.query("SELECT * FROM project_table WHERE project_id = '26'", function (err, result) {
+      if (err) {
+          console.log("alexa, play coldplay - fix you");
+      } else {
+        console.log("instructions yuh!")
+          res.send(result)
+      }
+  })
+})
+// video tutorial for project builders
+app.get('/video', (req, res) => {
+  db.query('SELECT * FROM project_table WHERE project_name = "VIDEO TUTORIAL"', function (err, result) {
+      if (err) {
+          console.log("video where?");
+      } else {
+        console.log("youtube video is here boy")
+          res.send(result)
+      }
+  })
+})
+
+// preview project for TPB, using a specific id
+app.get('/preproj', (req, res) => {
+  db.query("SELECT * FROM progress_history WHERE user_id = '2'", function (err, result) {
+      if (err) {
+          console.log("preview deez");
+      } else {
+        console.log("preview project")
+          res.send(result)
+      }
+  })
+})
+// this is to get student profiles for TPB check submissions
+app.get('/check-submissions', (req, res) => {
+  db.query('SELECT * FROM users_table JOIN progress_history ON users_table.user_id = progress_history.user_id WHERE role = "student"',
+  function (err, result) {
+     if (err) {
+         console.log("error 292");
+     } else {
+      console.log("check submissions? check!")
+      res.send(result)
+     }
+   
+  })
+});
+
+
+
+
 app.listen(port)
